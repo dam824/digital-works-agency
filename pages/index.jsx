@@ -72,7 +72,7 @@ const Index = () => {
                   </p>
                   <Link legacyBehavior href="/about">
                     <a className="read-more mt-10">
-                      Read More <i className="far fa-arrow-right" />
+                      En savoir plus <i className="far fa-arrow-right" />
                     </a>
                   </Link>
                 </div>
@@ -87,7 +87,7 @@ const Index = () => {
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-              Web <span>Design</span> Agency
+            Moins de blabla <span>&</span> Plus de résultats
             </span>
           </div>
         </div>
@@ -100,22 +100,22 @@ const Index = () => {
             <div className="col-xl-5 col-lg-8">
               <div className="what-we-do-content mb-55">
                 <div className="section-title mb-60 wow fadeInUp delay-0-2s">
-                  <span className="sub-title mb-15">What We Do</span>
-                  <h2>Latest Way to Get Web Solutions &amp; Business Growth</h2>
+                  <span className="sub-title mb-15">Ce qu’on fait </span>
+                  <h2>Du digital, mais surtout de l'humain</h2>
                 </div>
                 <div className="what-we-do-item wow fadeInUp delay-0-3s">
                   <div className="number">
                     <span>01</span>
                   </div>
                   <div className="content">
-                    <h5>Mobile Solutions</h5>
+                    <h5>Un Site Pensé Pour Vous, Avec Vous</h5>
                     <p>
-                      Sed ut perspiciatis unde omnis natus error voluptatem
-                      accusantium doloremque
+                    Chaque projet est unique, comme vous.
+                    Nous créons des sites qui reflètent votre identité et vos ambitions.
                     </p>
                     <Link legacyBehavior href="/service-details">
                       <a className="read-more style-two">
-                        <span>Read More</span>{" "}
+                        <span>En savoir plus</span>{" "}
                         <i className="far fa-arrow-right" />
                       </a>
                     </Link>
@@ -126,14 +126,14 @@ const Index = () => {
                     <span>02</span>
                   </div>
                   <div className="content">
-                    <h5>Web Solutions</h5>
+                    <h5>Plus Qu’un Site, Une Stratégie</h5>
                     <p>
-                      Quis autem veleum iure reprehe nderitecy quie voluptate
-                      velit esse quam nihile
+                    Un site web ne suffit pas, il doit être performant.
+                    Nous vous accompagnons pour qu’il atteigne son plein potentiel.
                     </p>
                     <Link legacyBehavior href="/service-details">
                       <a className="read-more style-two">
-                        <span>Read More</span>{" "}
+                        <span>En savoir plus</span>{" "}
                         <i className="far fa-arrow-right" />
                       </a>
                     </Link>
@@ -144,14 +144,14 @@ const Index = () => {
                     <span>03</span>
                   </div>
                   <div className="content">
-                    <h5>Custome Solutions</h5>
+                    <h5>Performance, SEO & Conformité</h5>
                     <p>
-                      We denounce with righteous indignation and dislike
-                      beguiled demoralized charms
+                    Un site visible, rapide et sécurisé, c’est essentiel.  
+                    On optimise chaque détail : référencement (SEO), protection des données (RGPD) et performances techniques.
                     </p>
                     <Link legacyBehavior href="/service-details">
                       <a className="read-more style-two">
-                        <span>Read More</span>{" "}
+                        <span>En savoir plus</span>{" "}
                         <i className="far fa-arrow-right" />
                       </a>
                     </Link>
@@ -162,8 +162,8 @@ const Index = () => {
             <div className="col-xl-6">
               <div className="what-we-do-image mb-55 wow fadeInRight delay-0-2s">
                 <img
-                  src="assets/images/services/what-we-do.jpg"
-                  alt="What We Do"
+                  src="assets/images/services/digital-works-office-1.webp"
+                  alt="Création de sites web sur-mesure, optimisation SEO et performance digitale par Digital Works"
                 />
               </div>
             </div>
@@ -172,7 +172,7 @@ const Index = () => {
       </section>
       {/* What We Do end */}
       {/* Statistics Area start */}
-      <div className="statistics-area pt-75 rpt-45 rel z-1">
+     {/*  <div className="statistics-area pt-75 rpt-45 rel z-1">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-xl-2 col-lg-3 col-6">
@@ -205,7 +205,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Statistics Area end */}
       {/* Service Style Three start */}
       <section className="service-three-area pt-70 rpt-40 rel z-1">
