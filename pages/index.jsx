@@ -633,8 +633,8 @@ const Index = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
               <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-20">Pricing Package</span>
-                <h2>Best Pricing Package For All Web Design Solutions</h2>
+                <span className="sub-title mb-20">Une Collaboration Humaine & Sur-Mesure</span>
+                <h2>Des solutions adaptées à vos besoins et à Votre Budget</h2>
               </div>
             </div>
           </div>
@@ -674,31 +674,31 @@ const Index = () => {
                   <div className="icon">
                     <img src="assets/images/icons/price.svg" alt="Icon" />
                   </div>
-                  <h5>Monthly Package</h5>
+                  <h5>Pack Essentiel</h5>
                 </div>
                 <p>
-                  We denounce with righteous indignation dislike beguiled and
-                  demoralize
+                Pour être en ligne rapidement et efficacement
                 </p>
                 <ul className="list-style-one">
-                  <li>Landing Page Design</li>
-                  <li>Web Development</li>
-                  <li>SEO Optimizations</li>
-                  <li>Mobile Applications Design</li>
-                  <li>Quality Assurance</li>
-                  <li>Customs Services</li>
+                  <li>Landing Page</li>
+                  <li>Site vitrine</li>
+                  <li>Optimisation SEO</li>
+                  <li>Sécurité & hébergement basique</li>
+                  <li>Responsive Design</li>
+                  <li>Support & Assistance de Démarrage</li>
                 </ul>
-                <div className="price-offer">
+                <br />
+              {/*   <div className="price-offer">
                   <span className="price-text">
                     <span className="before">$</span>
                     <span className="price">18.3</span>
                   </span>
                   <img src="assets/images/shapes/right-arrow.png" alt="Arrow" />
                   <span className="offer-text">Save 15%</span>
-                </div>
+                </div> */}
                 <Link legacyBehavior href="/pricing">
                   <a className="theme-btn w-100">
-                    Choose Package <i className="far fa-arrow-right" />
+                    Demander un devis <i className="far fa-arrow-right" />
                   </a>
                 </Link>
               </div>
@@ -715,31 +715,32 @@ const Index = () => {
                   <div className="icon">
                     <img src="assets/images/icons/price.svg" alt="Icon" />
                   </div>
-                  <h5>Yearly Package</h5>
+                  <h5>Pack Sérénité</h5>
                 </div>
                 <p>
                   We denounce with righteous indignation dislike beguiled and
                   demoralize
                 </p>
                 <ul className="list-style-one">
-                  <li>Landing Page Design</li>
-                  <li>Web Development</li>
-                  <li>SEO Optimizations</li>
-                  <li>Mobile Applications Design</li>
-                  <li>Quality Assurance</li>
+                  <li>Site e-commerce ou SaaS</li>
+                  <li>Développement sur-mesure</li>
+                  <li>Optimisation SEO</li>
+                  <li>Responsive design</li>
+                  <li>Support technique</li>
                   <li>Customs Services</li>
                 </ul>
-                <div className="price-offer">
+                <br />
+              {/*   <div className="price-offer">
                   <span className="price-text">
                     <span className="before">$</span>
                     <span className="price">18.3</span>
                   </span>
                   <img src="assets/images/shapes/right-arrow.png" alt="Arrow" />
                   <span className="offer-text">Save 15%</span>
-                </div>
+                </div> */}
                 <Link legacyBehavior href="/pricing">
                   <a className="theme-btn w-100">
-                    Choose Package <i className="far fa-arrow-right" />
+                    Demander un devis <i className="far fa-arrow-right" />
                   </a>
                 </Link>
               </div>
@@ -763,8 +764,8 @@ const Index = () => {
             <div className="col-xl-5">
               <div className="why-choose-two-wrap">
                 <div className="section-title mb-55 wow fadeInUp delay-0-2s">
-                  <span className="sub-title mb-15">Why Choose Us</span>
-                  <h2>We Provide Services In One Places</h2>
+                  <span className="sub-title mb-15">Pourquoi Nous Choisir ?</span>
+                  <h2>À Vos Côtés Pour Un Site Qui Vous Ressemble</h2>
                 </div>
                 <div className="why-choose-item-two wow fadeInUp delay-0-3s">
                   <div className="icon">
@@ -774,12 +775,11 @@ const Index = () => {
                   <div className="content">
                     <h4>
                       <Link legacyBehavior href="/service-details">
-                        <a>Competitive Rates</a>
+                        <a>Des Solutions Web Adaptées à Votre Projet</a>
                       </Link>
                     </h4>
                     <p>
-                      We denounce with righteous indignation and dislike
-                      beguiled demoralized charms
+                    Nous analysons vos besoins pour créer un site sur-mesure, performant et évolutif.
                     </p>
                   </div>
                 </div>
@@ -791,12 +791,11 @@ const Index = () => {
                   <div className="content">
                     <h4>
                       <Link legacyBehavior href="/service-details">
-                        <a>No Contracts Needed</a>
+                        <a>Un Accompagnement Humain et Transparent</a>
                       </Link>
                     </h4>
                     <p>
-                      To take trivial example, which eundertakes laborious
-                      physical exercise except
+                    De la conception à la mise en ligne, nous vous guidons à chaque étape, sans jargon technique inutile.
                     </p>
                   </div>
                 </div>
@@ -807,12 +806,11 @@ const Index = () => {
                   <div className="content">
                     <h4>
                       <Link legacyBehavior href="/service-details">
-                        <a>Powerful Terminal Lines</a>
+                        <a>Performance, Sécurité et Visibilité Optimale</a>
                       </Link>
                     </h4>
                     <p>
-                      At vero eos et accusamus eto dignissimos duc blanditiis
-                      praesentium volupta
+                    Optimisation SEO, rapidité, conformité RGPD : nous faisons en sorte que votre site soit en conformité avec les règles en vigeurs.
                     </p>
                   </div>
                 </div>
@@ -987,7 +985,7 @@ const Index = () => {
 
       {/* Testimonial Area end */}
       {/* Blog Style Two start */}
-      <section className="blog-area-two pt-125 rpt-100 pb-70 rpb-40">
+    {/*   <section className="blog-area-two pt-125 rpt-100 pb-70 rpb-40">
         <div className="container container-1290">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
@@ -1088,7 +1086,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Blog Style Two end */}
       {/* footer area start */}
     </Layout>
