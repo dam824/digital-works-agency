@@ -213,8 +213,8 @@ const Index = () => {
           <div className="row justify-content-center">
             <div className="col-lg-7">
               <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-20">Popular Services</span>
-                <h2>We Provide Amazing Web Design Solutions</h2>
+                <span className="sub-title mb-20">Nos Solutions Web : Puissance, Performance et Flexibilité</span>
+                <h2>Des solutions digitales adaptées à vos besoins </h2>
               </div>
             </div>
           </div>
@@ -224,16 +224,16 @@ const Index = () => {
                 <div className="title-icon">
                   <h5>
                     <Link legacyBehavior href="/service-details">
-                      <a>Web Design From Figma</a>
+                      <a>Création de sites web</a>
                     </Link>
                   </h5>
-                  <img src="assets/images/services/icon1.png" alt="Icon" />
+                  <img src="assets/images/services/code.png" alt="Icon" />
                 </div>
                 <div className="content">
-                  <p>We denounce with righteous indignation dislike beguile</p>
+                  <p>Nous concevons des sites vitrines, e-commerce et applications web adaptés à vos objectifs et à votre identité</p>
                   <Link legacyBehavior href="/service-details">
                     <a className="read-more style-two">
-                      <span>Read More</span>{" "}
+                      <span>En savoir plus</span>{" "}
                       <i className="far fa-arrow-right" />
                     </a>
                   </Link>
@@ -245,16 +245,16 @@ const Index = () => {
                 <div className="title-icon">
                   <h5>
                     <Link legacyBehavior href="/service-details">
-                      <a>PSD, Figma, XD to HTML Convert</a>
+                      <a>Technologies modernes</a>
                     </Link>
                   </h5>
-                  <img src="assets/images/services/icon2.png" alt="Icon" />
+                  <img src="assets/images/services/setting.png" alt="Icon" />
                 </div>
                 <div className="content">
-                  <p>At vero eos et accusamus et dignissim ducimbl ditiis</p>
+                  <p>Nous choisissons les solutions techniques les plus adaptées à vos besoins pour garantir performance et évolutivité.</p>
                   <Link legacyBehavior href="/service-details">
                     <a className="read-more style-two">
-                      <span>Read More</span>{" "}
+                      <span>En savoir plus</span>{" "}
                       <i className="far fa-arrow-right" />
                     </a>
                   </Link>
@@ -266,16 +266,16 @@ const Index = () => {
                 <div className="title-icon">
                   <h5>
                     <Link legacyBehavior href="/service-details">
-                      <a>WordPress Development</a>
+                      <a>Expertise SEO et Référencement</a>
                     </Link>
                   </h5>
-                  <img src="assets/images/services/icon3.png" alt="Icon" />
+                  <img src="assets/images/services/seo.png" alt="Icon" />
                 </div>
                 <div className="content">
-                  <p>To take trivial example which ever undertakes laborious</p>
+                  <p>Nous optimisons chaque détail pour maximiser votre présence sur Google et améliorer l’expérience utilisateur.</p>
                   <Link legacyBehavior href="/service-details">
                     <a className="read-more style-two">
-                      <span>Read More</span>{" "}
+                      <span>En savoir plus</span>{" "}
                       <i className="far fa-arrow-right" />
                     </a>
                   </Link>
@@ -287,16 +287,16 @@ const Index = () => {
                 <div className="title-icon">
                   <h5>
                     <Link legacyBehavior href="/service-details">
-                      <a>React Development</a>
+                      <a>Sécurité & conformité</a>
                     </Link>
                   </h5>
-                  <img src="assets/images/services/icon4.png" alt="Icon" />
+                  <img src="assets/images/services/verified.png" alt="Icon" />
                 </div>
                 <div className="content">
-                  <p>Sed persiciatis unde omnisey natus error voluptatem</p>
+                  <p>Nous garantissons des développements respectant les standards de sécurité et la conformité aux réglementations.</p>
                   <Link legacyBehavior href="/service-details">
                     <a className="read-more style-two">
-                      <span>Read More</span>{" "}
+                      <span>En savoir plus</span>{" "}
                       <i className="far fa-arrow-right" />
                     </a>
                   </Link>
@@ -312,7 +312,7 @@ const Index = () => {
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-              <span>Digital</span> solutions
+              DIGITAL WORKS 
             </span>
           </div>
         </div>
@@ -324,14 +324,14 @@ const Index = () => {
           <div className="row justify-content-between align-items-center pb-25">
             <div className="col-xl-6 col-lg-8">
               <div className="section-title mb-30 wow fadeInLeft delay-0-2s">
-                <span className="sub-title mb-15">Recent Works Gallery</span>
-                <h2>Lat’s Look Our Recent Project Gallery</h2>
+                <span className="sub-title mb-15">Nos Réalisations</span>
+                <h2>Création de Sites Web Modernes & Performants</h2>
               </div>
             </div>
             <div className="col-lg-4 text-lg-end">
               <Link legacyBehavior href="/projects">
                 <a className="theme-btn mb-25 wow fadeInRight delay-0-2s">
-                  View More Projects <i className="far fa-arrow-right" />
+                  Voir plus de projets<i className="far fa-arrow-right" />
                 </a>
               </Link>
             </div>
@@ -341,7 +341,7 @@ const Index = () => {
               <span className="serial-number">01</span>
               <h4>
                 <Link legacyBehavior href="/project-details">
-                  <a>Business Task Management Dashboard Design</a>
+                  <a>Site vitrine</a>
                 </Link>
               </h4>
             </div>
@@ -364,7 +364,7 @@ const Index = () => {
               <span className="serial-number">02</span>
               <h4>
                 <Link legacyBehavior href="/project-details">
-                  <a>PSD, Figma &amp; XD to HTML Design &amp; Development</a>
+                  <a>Solution Sass</a>
                 </Link>
               </h4>
             </div>
@@ -387,7 +387,7 @@ const Index = () => {
               <span className="serial-number">03</span>
               <h4>
                 <Link legacyBehavior href="/project-details">
-                  <a>Mobile Application Design &amp; Development</a>
+                  <a>Expertise SEO & réglementations RGPD</a>
                 </Link>
               </h4>
             </div>
@@ -409,7 +409,7 @@ const Index = () => {
       </section>
       {/* Project Timeline Area end */}
       {/* Team Area start */}
-      <section className="team-area pt-70 rpt-40">
+     {/*  <section className="team-area pt-70 rpt-40">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9">
@@ -614,14 +614,14 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Team Area end */}
       {/* Headline area start */}
       <div className="headline-area pt-65 rpt-55 rel z-1">
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-              pricing <span>Package</span>
+             Nos Offres
             </span>
           </div>
         </div>
