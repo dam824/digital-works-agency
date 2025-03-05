@@ -312,7 +312,7 @@ const Index = () => {
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-              DIGITAL WORKS 
+              <span> </span> DIGITAL WORKS 
             </span>
           </div>
         </div>
@@ -347,7 +347,7 @@ const Index = () => {
             </div>
             <div className="image">
               <img
-                src="assets/images/projects/project-timeline1.jpg"
+                src="assets/images/projects/europbots.webp"
                 alt="Project TimeLine Image"
               />
             </div>
@@ -370,7 +370,7 @@ const Index = () => {
             </div>
             <div className="image">
               <img
-                src="assets/images/projects/project-timeline2.jpg"
+                src="assets/images/projects/nanterre-dom.webp"
                 alt="Project TimeLine Image"
               />
             </div>
@@ -393,7 +393,7 @@ const Index = () => {
             </div>
             <div className="image">
               <img
-                src="assets/images/projects/project-timeline3.jpg"
+                src="assets/images/projects/seo2.webp"
                 alt="Project TimeLine Image"
               />
             </div>
@@ -621,7 +621,7 @@ const Index = () => {
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-             Nos Offres
+             <span>Découvrez</span> Nos Offres
             </span>
           </div>
         </div>
@@ -644,11 +644,11 @@ const Index = () => {
                 className="pricing-banner"
                 style={{
                   backgroundImage:
-                    "url(assets/images/background/pricing-banner-bg.jpg)",
+                    "url(assets/images/background/background.webp)",
                 }}
               >
-                <span className="join-us">Join With Us</span>
-                <h4>Amazing Pricing For Growth Business</h4>
+                <span className="join-us">Rejoignez l'aventure</span>
+                <h4>Des Offres Sur-Mesure Pour Booster Votre Visibilité et Votre Croissance</h4>
                 <Link legacyBehavior href="/pricing">
                   <a className="details-btn">
                     <i className="far fa-arrow-right" />
@@ -718,16 +718,15 @@ const Index = () => {
                   <h5>Pack Sérénité</h5>
                 </div>
                 <p>
-                  We denounce with righteous indignation dislike beguiled and
-                  demoralize
+                Idéal pour : E-commerce, SaaS, entreprises avec un besoin sur-mesure
                 </p>
                 <ul className="list-style-one">
-                  <li>Site e-commerce ou SaaS</li>
+                  <li>Site e-commerce </li>
+                  <li>Sass </li>
                   <li>Développement sur-mesure</li>
                   <li>Optimisation SEO</li>
                   <li>Responsive design</li>
-                  <li>Support technique</li>
-                  <li>Customs Services</li>
+                  <li>Support & Assistance de Démarrage</li>
                 </ul>
                 <br />
               {/*   <div className="price-offer">
@@ -756,7 +755,7 @@ const Index = () => {
             <div className="col-xl-7">
               <div className="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
                 <img
-                  src="assets/images/services/why-choose-left.jpg"
+                  src="assets/images/services/digital-works-a-vos-cotes.webp"
                   alt="Why Choose Left Image"
                 />
               </div>
@@ -825,14 +824,14 @@ const Index = () => {
         <div className="container-fluid">
           <div className="headline-text marquee">
             <span>
-              <span>clients</span> Say’s
+              <span>Notre mission</span> votre succès
             </span>
           </div>
         </div>
       </div>
       {/* Headline Area end */}
       {/* Testimonial Area start */}
-      <section className="testimonials-three-area pt-95 rpt-70">
+    {/*   <section className="testimonials-three-area pt-95 rpt-70">
         <div className="container container-1260">
           <div className="row gap-120 align-items-center">
             <div className="col-lg-6">
@@ -981,7 +980,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonial Area end */}
       {/* Blog Style Two start */}

@@ -4568,10 +4568,10 @@ h6, .h6 {
     -webkit-animation: marquee 15s linear infinite;
     animation: marquee 15s linear infinite; }
     .headline-text > span span {
-      opacity: 0.2;
+      opacity: 0.4;
       color: transparent;
       -webkit-text-stroke: 1px;
-      -webkit-text-stroke-color: white; }
+      -webkit-text-stroke-color: #55e6a5; }
   @media only screen and (min-width: 1400px) {
     .headline-text.style-two {
       font-size: 220px; } }
