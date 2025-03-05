@@ -19,7 +19,7 @@ const About = () => {
           <div className="row">
             <div className="col-xl-10 col-lg-11">
               <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-                We’re Digital Web
+              Une experience digitale
                 <img
                   className="mxw-20"
                   src="assets/images/banner/inside-title1.png"
@@ -30,7 +30,7 @@ const About = () => {
                   src="assets/images/banner/inside-title2.png"
                   alt="title"
                 />
-                Development Agency
+                humaine
                 <span className="arrow">
                   <img
                     className="wow fadeInLeft delay-0-6s"
@@ -50,21 +50,21 @@ const About = () => {
         <div className="container-fluid">
           <div className="video-part style-two mb-40 wow fadeInUp delay-0-2s">
             <img src="assets/images/video/video-two-bg.jpg" alt="Video" />
-            <a
+           {/*  <a
               href="https://www.youtube.com/watch?v=9Y7ma241N8k"
               className="mfp-iframe video-play"
             >
               <i className="fas fa-play" />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 wow fadeInLeft delay-0-2s">
               <div className="client-text text-lg-start text-center mt-40 pb-50">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptat
-                emey accusantium doloremque laudantium totam aperiam eaque
-                quabillo inventore veritatisey quasi architecto beatae dictasunt
+              Chez Digital Works, nous cassons les codes de la création de sites web en plaçant l’humain et la transparence au cœur de notre démarche.
+              Chaque projet est une aventure, une collaboration où nous vous accompagnons du concept à la réussite, avec une approche sur-mesure, claire et engagée.
+              Votre vision + Notre expertise = Un site web qui vous représente et qui cartonne !
               </div>
               <div className="row">
                 <div className="col-xl-10">
@@ -99,7 +99,7 @@ const About = () => {
             </div>
             <div className="col-lg-6 wow fadeInRight delay-0-2s">
               <div className="video-year text-lg-end text-center rel">
-                1980
+                2025
                 <img
                   className="leaf-shape"
                   src="assets/images/video/leaf.png"
@@ -117,8 +117,8 @@ const About = () => {
           <div className="row justify-content-center">
             <div className="col-lg-7">
               <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-15">Who We Are</span>
-                <h2>We are Professional and Experience Team </h2>
+                <span className="sub-title mb-15">Qui sommes-nous</span>
+                <h2>L’Expérience Web Sur-Mesure Pensée Pour Vous</h2>
               </div>
             </div>
           </div>
@@ -127,11 +127,10 @@ const About = () => {
               <div className="why-choose-item style-two wow fadeInUp delay-0-2s">
                 <div className="why-choose-header">
                   <i className="flaticon-creativity" />
-                  <h5>Customize your site</h5>
+                  <h5>Lancé en un éclair ou affiné au détail près</h5>
                 </div>
                 <p>
-                  At vero eos et accusamus iusto dignissim ducimuse blanditiis
-                  praesentiue
+                Que vous ayez besoin d’un site rapide à mettre en ligne ou d’un développement sur-mesure, nous construisons des solutions efficaces et évolutives, adaptées à vos besoins
                 </p>
               </div>
             </div>
@@ -139,11 +138,10 @@ const About = () => {
               <div className="why-choose-item style-two wow fadeInUp delay-0-4s">
                 <div className="why-choose-header">
                   <i className="flaticon-mobile-banking" />
-                  <h5>Edit your mobile view</h5>
+                  <h5>Une expérience adaptée à tout support</h5>
                 </div>
                 <p>
-                  Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                  corporis suscipit
+                Nos sites sont 100% responsives, optimisés pour ordinateurs, tablettes et mobiles, garantissant une navigation fluide et une expérience utilisateur impeccable.
                 </p>
               </div>
             </div>
@@ -151,11 +149,10 @@ const About = () => {
               <div className="why-choose-item style-two wow fadeInUp delay-0-6s">
                 <div className="why-choose-header">
                   <i className="flaticon-optimization-1" />
-                  <h5>Optimize search engines</h5>
+                  <h5>SEO, RGPD et conformité : on s’occupe de tout</h5>
                 </div>
                 <p>
-                  Quis autem vel eum iure reprehenderi qui ea voluptate velit
-                  esse quam nihile
+                Boostez votre visibilité avec un SEO performant et un site conforme aux normes RGPD respectant les aspects juridiques et réglementaires.
                 </p>
               </div>
             </div>
@@ -170,39 +167,27 @@ const About = () => {
             <span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
+                <b></b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
+                <b>Vitrine</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
+                <b>E-commerce</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
+                <b>Sur-mesure</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
+                <b>SEO</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
+                <b>Accompagnement</b>
               </span>
             </span>
           </div>
@@ -210,7 +195,7 @@ const About = () => {
       </div>
       {/* Headline Area end */}
       {/* Team Area start */}
-      <section className="team-area pt-130 rpt-100">
+   {/*    <section className="team-area pt-130 rpt-100">
         <div className="container-fluid">
           <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
             <div className="col">
@@ -408,10 +393,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Team Area end */}
       {/* Statistics Area start */}
-      <div
+    {/*   <div
         className="statistics-area pt-100 rpt-70 rel z-1"
         style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
       >
@@ -447,7 +432,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Statistics Area end */}
       {/* Testimonial Area start */}
       <section className="testimonial-section pt-70 rpt-30">
@@ -471,26 +456,23 @@ const About = () => {
                   <SwiperSlide className="testimonial-item">
                     <div className="author-speech">
                       <p>
-                        <span className="quote">“</span> On the other hand we
-                        denounce with see righteous indignation and dislike men
-                        who are beguiled and demoralized by the charms offset
-                        pleasure moments line desire that they cannot foresee
-                        pain and trouble that are bound ensue and equal blame
-                        belongs their duty{" "}
+                        <span className="quote">“</span> Nous recherchions une solution efficace pour gérer nos livraisons de plats et Digital Works a su répondre à nos attentes avec écoute et transparence. À chaque étape du projet, nous avons pu suivre l’avancement et ajuster nos besoins en toute confiance. Leur équipe a développé un back-office complet pour le suivi des commandes et la gestion des achats, nous offrant un outil performant et intuitif.
+                        C'est avant tout une aventure humaine
+                        {" "}
                         <span className="quote right-quote">“</span>
                       </p>
                     </div>
                     <div className="testimonial-footer">
                       <div className="testimonial-author">
                         <div className="author-image">
-                          <img
+                          {/* <img
                             src="assets/images/testimonials/author1.png"
                             alt="Author Image"
-                          />
+                          /> */}
                         </div>
                         <div className="author-info">
-                          <h4>James N. Johnson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
+                          <h4>D.F</h4>
+                          <span className="designation">So Delicious</span>
                         </div>
                       </div>
                       <div className="ratting style-two">
@@ -503,6 +485,36 @@ const About = () => {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide className="testimonial-item">
+                    <div className="author-speech">
+                      <p>
+                        <span className="quote">“</span> 
+                        Digital Works, c’est bien plus qu’une agence. Leur écoute et accompagnement humain ont été essentiels pour comprendre nos besoins et développer un outil de gestion de campagnes SMS sur-mesure. Grâce à cette solution, nous avons simplifié notre gestion, gagné un temps précieux et optimisé notre organisation. Une vraie collaboration qui a transformé notre manière de travailler !
+                        <span className="quote right-quote">“</span>
+                      </p>
+                    </div>
+                    <div className="testimonial-footer">
+                      <div className="testimonial-author">
+                        {/* <div className="author-image">
+                          <img
+                            src="assets/images/testimonials/author1.png"
+                            alt="Author Image"
+                          />
+                        </div> */}
+                        <div className="author-info">
+                          <h4>A-M</h4>
+                          <span className="designation">Nanterre-Dom</span>
+                        </div>
+                      </div>
+                      <div className="ratting style-two">
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star-half-alt" />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                 {/*  <SwiperSlide className="testimonial-item">
                     <div className="author-speech">
                       <p>
                         <span className="quote">“</span> On the other hand we
@@ -569,41 +581,7 @@ const About = () => {
                         <i className="fas fa-star-half-alt" />
                       </div>
                     </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="testimonial-item">
-                    <div className="author-speech">
-                      <p>
-                        <span className="quote">“</span> On the other hand we
-                        denounce with see righteous indignation and dislike men
-                        who are beguiled and demoralized by the charms offset
-                        pleasure moments line desire that they cannot foresee
-                        pain and trouble that are bound ensue and equal blame
-                        belongs their duty{" "}
-                        <span className="quote right-quote">“</span>
-                      </p>
-                    </div>
-                    <div className="testimonial-footer">
-                      <div className="testimonial-author">
-                        <div className="author-image">
-                          <img
-                            src="assets/images/testimonials/author1.png"
-                            alt="Author Image"
-                          />
-                        </div>
-                        <div className="author-info">
-                          <h4>James N. Johnson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
-                        </div>
-                      </div>
-                      <div className="ratting style-two">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star-half-alt" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
+                  </SwiperSlide> */}
                 </Swiper>
                 <div className="testimonial-controls mt-75 rmt-40">
                   <button className="testimonial-prev slick-arrow">
@@ -624,9 +602,9 @@ const About = () => {
       {/* Testimonial Area end */}
       {/* Client Logo Two start */}
       <section className="client-logo-area pt-130 rpt-100 pb-100 rpb-70">
-        <div className="container">
+     {/*    <div className="container">
           <div className="section-title text-center mb-60">
-            <h4>We Have 1520+Global Clients</h4>
+            <h4>Ils nous font confiance</h4>
           </div>
           <div className="client-logo-wrap">
             <Link legacyBehavior href="/contact">
@@ -678,7 +656,7 @@ const About = () => {
               </a>
             </Link>
           </div>
-        </div>
+        </div> */}
       </section>
     </Layout>
   );

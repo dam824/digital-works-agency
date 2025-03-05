@@ -14,13 +14,14 @@ const Services = () => {
           <div className="row">
             <div className="col-lg-12">
               <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-                Digital Services
+                Créations
                 <img
                   className="mxw-10 leaf"
                   src="assets/images/banner/leaf.png"
                   alt="Leaf"
-                />
-                For Web Design &amp; Development
+                /><br />
+                sur mesure<br/>
+                Créé Avec Passion et Expertise
               </h1>
             </div>
           </div>
@@ -44,12 +45,11 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/service-details">
-                      <a>Web Development</a>
+                      <a>Création & Développement Web</a>
                     </Link>
                   </h4>
                   <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    quie blanditiis praesentium voluptatum delenit corruptie
+                  Sites vitrines, e-commerce ou sur-mesure, nous développons avec les meilleures technologies pour un site rapide, sécurisé et évolutif.
                   </p>
                 </div>
               </div>
@@ -67,12 +67,11 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/service-details">
-                      Application Development
+                    Développement d’Applications Web & SaaS
                     </Link>
                   </h4>
                   <p>
-                    Quis autem vel eum iure reprehenderit qui in ea voluptate
-                    velit esse quam nihil molestiae consequatur, vel illum quie
+                  Besoin d’une solution métier ou d’une plateforme SaaS performante ? Nous créons des applications adaptées à votre business et à vos besoins spécifiques.
                   </p>
                 </div>
               </div>
@@ -90,12 +89,11 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/service-details">
-                      Digital Product Design
+                    Expérience Utilisateur & UI/UX Design
                     </Link>
                   </h4>
                   <p>
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid commodie{" "}
+                  Un design qui capte l’attention, une navigation fluide et intuitive : nous optimisons chaque détail pour maximiser l’engagement de vos visiteurs.{" "}
                   </p>
                 </div>
               </div>
@@ -113,12 +111,11 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/service-details">
-                      SEO Optimization
+                    SEO & Référencement Naturel
                     </Link>
                   </h4>
                   <p>
-                    We denounce with righteous indignation and dislike men who
-                    are so beguiled and demoralized by the charms of pleasure
+                  Un site visible sur Google, c’est essentiel. Nous optimisons votre référencement pour booster votre trafic et améliorer votre positionnement.
                   </p>
                 </div>
               </div>
@@ -136,12 +133,13 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/service-details">
-                      <a>Design &amp; Branding</a>
+                      <a>Conformité RGPD</a>
                     </Link>
                   </h4>
                   <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    quie blanditiis praesentium voluptatum delenit corruptie
+                  Un site conforme aux exigences RGPD : transparence sur la collecte des données, 
+  gestion des consentements, sécurisation des informations et respect des droits des utilisateurs. 
+  Protégez votre activité et assurez une conformité sans faille.
                   </p>
                 </div>
               </div>
@@ -159,62 +157,16 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/service-details">
-                      IT Consulting
+                      Accompagnement personnalisé
                     </Link>
                   </h4>
                   <p>
-                    Quis autem vel eum iure reprehenderit qui in ea voluptate
-                    velit esse quam nihil molestiae consequatur, vel illum quie
+                  Accompagnement personnalisé en matière de réglementation : nous vous guidons sur les obligations RGPD et la conformité CNIL, pour une protection optimale de vos données et celles de vos utilisateurs.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="feature-item-three wow fadeInUp delay-0-2s">
-                <div className="top-part">
-                  <span className="serial-number">07</span>
-                  <Link legacyBehavior href="/service-details">
-                    <a className="details-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="/service-details">
-                      Business Development
-                    </Link>
-                  </h4>
-                  <p>
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid commodie{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="feature-item-three wow fadeInUp delay-0-4s">
-                <div className="top-part">
-                  <span className="serial-number">08</span>
-                  <Link legacyBehavior href="/service-details">
-                    <a className="details-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="/service-details">
-                      eCommerce Development
-                    </Link>
-                  </h4>
-                  <p>
-                    We denounce with righteous indignation and dislike men who
-                    are so beguiled and demoralized by the charms of pleasure
-                  </p>
-                </div>
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -226,39 +178,27 @@ const Services = () => {
             <span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
+                <b></b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
+                <b>Vitrine</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
+                <b>E-commerce</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
+                <b>Sur-mesure</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
+                <b>SEO</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
+                <b>Accompagnement</b>
               </span>
             </span>
           </div>
@@ -271,37 +211,37 @@ const Services = () => {
           <div className="row gap-70">
             <div className="col-xl-3 col-md-6">
               <div className="work-step-item style-two mt-60 wow fadeInDown delay-0-2s">
-                <span className="step-number">Step 01</span>
-                <h4 className="title">Idea Generate</h4>
+                <span className="step-number">01</span>
+                <h4 className="title">Idée & Stratégie</h4>
                 <div className="content">
-                  <p>Vero eos et accusamus iusto odio disimos</p>
+                  <p>On définit ensemble votre projet et ses objectifs.</p>
                 </div>
               </div>
             </div>
             <div className="col-xl-3 col-md-6">
               <div className="work-step-item style-two wow fadeInUp delay-0-2s">
-                <span className="step-number">Step 02</span>
-                <h4 className="title">Plan &amp; Design</h4>
+                <span className="step-number">02</span>
+                <h4 className="title">Conception & Design</h4>
                 <div className="content">
-                  <p>Quis autems eum iures reprehen voluptate</p>
+                  <p>Un design soigné, pensé pour vous</p>
                 </div>
               </div>
             </div>
             <div className="col-xl-3 col-md-6">
               <div className="work-step-item style-two mt-60 wow fadeInDown delay-0-2s">
-                <span className="step-number">Step 03</span>
-                <h4 className="title">Project Testing</h4>
+                <span className="step-number">03</span>
+                <h4 className="title">Développement & Tests</h4>
                 <div className="content">
-                  <p>To take example which ever undertakes</p>
+                  <p>Optimisation SEO & RGPD.</p>
                 </div>
               </div>
             </div>
             <div className="col-xl-3 col-md-6">
               <div className="work-step-item style-two wow fadeInUp delay-0-2s">
-                <span className="step-number">Step 04</span>
-                <h4 className="title">Got Results</h4>
+                <span className="step-number">04</span>
+                <h4 className="title">Lancement & Accompagnement</h4>
                 <div className="content">
-                  <p>Avoids paine produces resultant pleasure</p>
+                  <p>Mise en ligne rapide suivi personnalisé</p>
                 </div>
               </div>
             </div>
@@ -316,7 +256,7 @@ const Services = () => {
       </section>
       {/* Work Process Area end */}
       {/* Testimonial Area start */}
-      <section className="testimonial-section pt-95 rpt-65 pb-130 rpb-100">
+    {/*   <section className="testimonial-section pt-95 rpt-65 pb-130 rpb-100">
         <div className="container container-1210">
           <div className="row">
             <div className="col-lg-6">
@@ -486,7 +426,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Testimonial Area end */}
       {/* footer area start */}
     </Layout>
