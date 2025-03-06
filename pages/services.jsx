@@ -21,7 +21,7 @@ const Services = () => {
                   alt="Leaf"
                 /><br />
                 sur mesure<br/>
-                Créé Avec Passion et Expertise
+                Avec Passion et Expertise
               </h1>
             </div>
           </div>

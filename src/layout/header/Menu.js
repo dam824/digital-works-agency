@@ -22,30 +22,29 @@ const DaskTopMenu = () => {
     <ul className="navigation d-none d-lg-flex desktop-menu">
       <li className="dropdown">
         <a href="/">Acceuil</a>
-       
       </li>
       <li>
         <Link legacyBehavior href="about">
           A propos
         </Link>
       </li>
-       
+
       <li className="dropdown">
         <a href="#">Nos services</a>
         <ul>
           <li>
             <Link legacyBehavior href="services">
-             Création de site Web 
+              Création de site Web
             </Link>
           </li>
           <li>
             <Link legacyBehavior href="service-details">
-              Solutions SaaS 
+              Solutions SaaS
             </Link>
           </li>
           <li>
             <Link legacyBehavior href="service-details2">
-            Audit Web & Consulting en Conformité
+              Audit Web & Consulting en Conformité
             </Link>
           </li>
         </ul>
@@ -76,6 +75,9 @@ const DaskTopMenu = () => {
           <span className="far fa-plus" />
         </div>
       </li>
+      <li className="dropdown">
+        <a href="pricing">Devis</a>
+      </li>
     </ul>
   );
 };
@@ -94,7 +96,7 @@ const MobileMenu = () => {
   return (
     <ul className="navigation d-block d-lg-none mobile-menu">
       <li className="dropdown">
-        <a href="#">Acceuil</a>
+        <a href="/">Acceuil</a>
       </li>
       <li>
         <Link legacyBehavior href="about">
@@ -173,17 +175,17 @@ const MobileMenu = () => {
         <ul style={activeLi("Services")}>
           <li>
             <Link legacyBehavior href="services">
-            Création de site Web 
+              Création de site Web
             </Link>
           </li>
           <li>
             <Link legacyBehavior href="service-details">
-            Solutions SaaS 
+              Solutions SaaS
             </Link>
           </li>
           <li>
             <Link legacyBehavior href="service-details2">
-            Audit Web & Consulting en Conformité
+              Audit Web & Consulting en Conformité
             </Link>
           </li>
         </ul>
@@ -209,11 +211,15 @@ const MobileMenu = () => {
               Project Details
             </Link>
           </li>
+          
         </ul>
         <div className="dropdown-btn" onClick={() => activeMenuSet("Projects")}>
           <span className="far fa-plus" />
         </div>
       </li>
+      <li className="dropdown">
+            <a href="pricing">Devis</a>
+          </li>
     </ul>
   );
 };

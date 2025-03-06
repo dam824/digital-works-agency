@@ -1,6 +1,6 @@
 import { Accordion } from "react-bootstrap";
 
-const YgencyAccordion = ({ event, active, onClick, title }) => {
+const YgencyAccordion = ({ event, active, onClick, title, content }) => {
   return (
     <div className="accordion-item">
       <h5 className="accordion-header">
@@ -17,9 +17,7 @@ const YgencyAccordion = ({ event, active, onClick, title }) => {
       <Accordion.Collapse eventKey={event}>
         <div className="accordion-body">
           <p>
-            To take a trivial example which undertakes laborious physical
-            exercise except to obtain some advantage pleasure annoying
-            consequences
+           {content}
           </p>
         </div>
       </Accordion.Collapse>
