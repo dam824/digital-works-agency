@@ -13,7 +13,7 @@ const PageBanner = ({ pageName }) => {
             <ol className="breadcrumb justify-content-center wow fadeInUp delay-0-4s">
               <li className="breadcrumb-item">
                 <Link legacyBehavior href="/">
-                  Home
+                  Accueil
                 </Link>
               </li>
               <li className="breadcrumb-item active">{pageName}</li>

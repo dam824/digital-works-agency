@@ -1,7 +1,7 @@
 'use client'
 import PageBanner from "@/src/components/PageBanner";
 import Layout from "@/src/layout/Layout";
-import React, { useState } from 'react';  ;
+import React, { useState } from 'react';  
 
 
 const Contact = () => {
@@ -10,8 +10,9 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
+      name: e.target.name.value,
+      phone_number: e.target.phone_number.value,
       email: e.target.email.value,
-      subject: e.target.subject.value,
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
@@ -50,7 +51,7 @@ const Contact = () => {
                   <div className="col-xl-10">
                     <div className="section-title mb-60">
                       <span className="sub-title mb-15">Contactez-nous </span>
-                      <h2>Ready to Work Your Next Projects</h2>
+                      <h2>Passez à l’action, on s’occupe du reste</h2>
                       <p>Vous avez une question, un besoin spécifique ou une idée à concrétiser ? <br /> On est là pour vous accompagner à chaque étape. Contactez-nous et donnons vie ensemble à votre projet digital </p>
                     </div>
                   </div>
@@ -123,7 +124,7 @@ const Contact = () => {
                           id="name"
                           name="name"
                           className="form-control"
-                          defaultValue
+                          defaultValue={""}
                           placeholder="Nom"
                           required
                           data-error="Renseignez votre nom"
@@ -141,8 +142,8 @@ const Contact = () => {
                           id="phone_number"
                           name="phone_number"
                           className="form-control"
-                          defaultValue
-                          placeholder="Phone"
+                          defaultValue={""}
+                          placeholder="Téléphone"
                           required
                           data-error="Please enter your Number"
                         />
@@ -159,8 +160,8 @@ const Contact = () => {
                           id="email"
                           name="email"
                           className="form-control"
-                          defaultValue
-                          placeholder="Email Address"
+                          defaultValue={""}
+                          placeholder="Email"
                           required
                           data-error="Please enter your Email Address"
                         />
