@@ -1,6 +1,40 @@
+'use client'
 import PageBanner from "@/src/components/PageBanner";
 import Layout from "@/src/layout/Layout";
+import React, { useState } from 'react';  ;
+
+
 const Contact = () => {
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
+
+    //envoi les data au serveur
+    const options = {
+      method : 'POST',
+      headers: {
+        'Content-Type' : 'application/json',
+      },
+      body: JSONdata
+    }
+
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
+    console.log(resData);
+    if(response.status === 200){
+      console.log('message envoye');
+      setEmailSubmitted(true);
+    }
+  };
+
   return (
     <Layout dark>
       {/* Page Banner Start */}
@@ -74,7 +108,7 @@ const Contact = () => {
                 <form
                   id="contactForm"
                   className="contactForm"
-                  action="assets/php/form-process.php"
+                  onSubmit={handleSubmit}
                   name="contactForm"
                   method="post"
                 >
@@ -157,7 +191,7 @@ const Contact = () => {
                           type="submit"
                           className="theme-btn style-two w-100"
                         >
-                          Send Message us <i className="far fa-arrow-right" />
+                         Envoyer votre message <i className="far fa-arrow-right" />
                         </button>
                         <div id="msgSubmit" className="hidden" />
                       </div>
