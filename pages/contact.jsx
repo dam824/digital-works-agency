@@ -15,42 +15,40 @@ const Contact = () => {
                 <div className="row">
                   <div className="col-xl-10">
                     <div className="section-title mb-60">
-                      <span className="sub-title mb-15">Contact Us</span>
+                      <span className="sub-title mb-15">Contactez-nous </span>
                       <h2>Ready to Work Your Next Projects</h2>
+                      <p>Vous avez une question, un besoin spécifique ou une idée à concrétiser ? <br /> On est là pour vous accompagner à chaque étape. Contactez-nous et donnons vie ensemble à votre projet digital </p>
                     </div>
                   </div>
                 </div>
                 <div className="row gap-80 pb-30">
                   <div className="col-sm-6">
                     <div className="our-location-address mb-40">
-                      <h5>New York</h5>
-                      <p>
-                        55 One State Road, 2nd Block New York, United States
-                      </p>
-                      <a className="mailto" href="mailto:support@gmail.com">
-                        support@gmail.com
+                      <h5>Franconville</h5>
+                      <a className="mailto" href="mailto:digitalworks@gmail.com">
+                        digitalworks@gmail.com
                       </a>
                       <br />
                       <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +000 (123) 456 88
+                        <i className="fas fa-phone" /> +33....
                       </a>
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="our-location-address mb-40">
-                      <h5>Australia</h5>
-                      <p>67 One State Road, 2nd Block Melbourne, Australia</p>
-                      <a className="mailto" href="mailto:support@gmail.com">
-                        support@gmail.com
+                      <h5>Les Epesses</h5>
+                      
+                      <a className="mailto" href="mailto:digitalworks@gmail.com">
+                        digitalworks@gmail.com
                       </a>
                       <br />
                       <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +000 (123) 456 88
+                        <i className="fas fa-phone" /> +33 ...
                       </a>
                     </div>
                   </div>
                 </div>
-                <h4>Follow Us</h4>
+                {/* <h4>Nos réseaux sociaux</h4>
                 <div className="social-style-two pt-15">
                   <a href="#">
                     <i className="fab fa-facebook-f" />
@@ -64,14 +62,14 @@ const Contact = () => {
                   <a href="#">
                     <i className="fab fa-linkedin-in" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xl-5 col-lg-6">
               <div className="contact-page-form form-style-one wow fadeInUp delay-0-2s">
                 <div className="section-title mb-35">
-                  <span className="sub-title mb-15">Get Free Quote</span>
-                  <h3>Drop Us a Message</h3>
+                  <span className="sub-title mb-15">Dites-nous tout</span>
+                  <h3>Posez-nous vos questions</h3>
                 </div>
                 <form
                   id="contactForm"
@@ -92,9 +90,9 @@ const Contact = () => {
                           name="name"
                           className="form-control"
                           defaultValue
-                          placeholder="Full Name"
+                          placeholder="Nom"
                           required
-                          data-error="Please enter your name"
+                          data-error="Renseignez votre nom"
                         />
                         <div className="help-block with-errors" />
                       </div>
@@ -173,7 +171,7 @@ const Contact = () => {
       </section>
       {/* Contact Form Area end */}
       {/* Location Map Area Start */}
-      <div className="contact-page-map mb-120 rpb-90 wow fadeInUp delay-0-2s">
+  {/*     <div className="contact-page-map mb-120 rpb-90 wow fadeInUp delay-0-2s">
         <div className="container-fluid">
           <div className="our-location">
             <iframe
@@ -185,7 +183,7 @@ const Contact = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Location Map Area End */}
       {/* footer area start */}
     </Layout>

@@ -10,7 +10,7 @@ const Nav = ({ singleMenu }) => {
             <Link legacyBehavior href="/">
               <a>
                 <img
-                 src="assets/images/logos/Digital-works-logo-mobile.svg"
+                 src="assets/images/logos/Digital-works-logo-1.svg"
                  alt="Logo Digital Works agence web Val d'Oise & Vendée"
                  title="Logo de l'agence Digital Works"
                 />

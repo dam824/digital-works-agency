@@ -52,8 +52,13 @@ const DaskTopMenu = () => {
           <span className="far fa-plus" />
         </div>
       </li>
+   {/*    <li>
+        <Link href="project-list">
+          A propos
+        </Link>
+      </li> */}
       <li className="dropdown">
-        <a href="#">Projects</a>
+        <a href="#">Projets</a>
         <ul>
           <li>
             <Link legacyBehavior href="projects">
@@ -76,7 +81,7 @@ const DaskTopMenu = () => {
         </div>
       </li>
       <li className="dropdown">
-        <a href="pricing">Devis</a>
+        <a href="contact">Devis</a>
       </li>
     </ul>
   );
@@ -218,7 +223,7 @@ const MobileMenu = () => {
         </div>
       </li>
       <li className="dropdown">
-            <a href="pricing">Devis</a>
+            <a href="contact">Devis</a>
           </li>
     </ul>
   );

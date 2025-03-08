@@ -262,9 +262,8 @@ const ServiceDetails2 = () => {
                   <span className="after">Une vision claire de votre site</span>
                 </span>
                 <ul className="list-style-one">
-                  <li>Analyse de la sémantique du code </li>
-                  <li>Analyse des performances sur tout support </li>
-                  <li>Analyse du  SEO</li>
+                  <li>Analyse des performances sur tout supports</li>
+                  <li>Analyse de la mise en place de référencement naturel</li>
                   <li>Vérification des normes et conformité RGPD</li>
                   <li>Test de compatibilité sur différents supports (responsive) </li>
                 </ul>

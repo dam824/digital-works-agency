@@ -25,7 +25,7 @@ const ProjectList = () => {
               </Link>
             </div>
             <div className="content wow fadeInRight delay-0-2s">
-              <Link legacyBehavior href="/projects">
+              <Link legacyBehavior href="novagroupe.eu">
                 <a className="category">Projet web</a>
               </Link>
               <h2>
@@ -37,14 +37,9 @@ const ProjectList = () => {
               </h2>
               <hr />
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sitesy
-                voluptatem accusantium doloremque lauda
+                Refonte graphique complète selon les exigences du client, en collaboration avec l'agence <a href="https://m-com.fr/">Mcom.</a>  <br />
+                Spécialiste français des poêles, inserts, cheminées et cuisinières à bois, proposant des produits haut de gamme conçus avec des matériaux de qualité.
               </p>
-              <Link legacyBehavior href="/project-details">
-                <a className="read-more">
-                  Plus d'informations <i className="far fa-arrow-right" />
-                </a>
-              </Link>
             </div>
           </div>
           <div className="project-item style-two">
@@ -53,7 +48,7 @@ const ProjectList = () => {
                 <a className="category">Projet web</a>
               </Link>
               <h2>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="https://europbots.com/">
                   <a>
                     Site <i>Vitrine</i>
                   </a>
@@ -61,14 +56,10 @@ const ProjectList = () => {
               </h2>
               <hr />
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sitesy
-                voluptatem accusantium doloremque lauda
-              </p>
-              <Link legacyBehavior href="/project-details">
-                <a className="read-more">
-                  Plus d'informations <i className="far fa-arrow-right" />
-                </a>
-              </Link>
+              Intégration front-end et animations du site vitrine en collaboration avec l'agence web <a href="https://redcat-studio.fr">Redcat Studio.</a>
+              Développement réalisé à partir des maquettes fournies par leur équipe de graphistes, garantissant une interface fluide et immersive.
+            </p>
+              
             </div>
             <div className="image wow fadeInRight delay-0-2s">
               <img
@@ -111,14 +102,9 @@ const ProjectList = () => {
               </h2>
               <hr />
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sitesy
-                voluptatem accusantium doloremque lauda
-              </p>
-              <Link legacyBehavior href="/project-details">
-                <a className="read-more">
-                  Project Details <i className="far fa-arrow-right" />
-                </a>
-              </Link>
+              Développement front-end et animations réalisées en partenariat avec l'agence web <a href="https://redcat-studio.fr">Redcat Studio.</a>.  
+              L’intégration a été effectuée à partir des maquettes conçues par leur équipe graphique, assurant une navigation fluide et un rendu visuel impactant.
+            </p>
             </div>
           </div>
           <div className="project-item style-two">
@@ -135,8 +121,7 @@ const ProjectList = () => {
               </h2>
               <hr />
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sitesy
-                voluptatem accusantium doloremque lauda
+              Développement sur mesure d’un outil d’automatisation des envois de SMS, optimisant la gestion du temps et fluidifiant la communication.
               </p>
               <Link legacyBehavior href="/project-details">
                 <a className="read-more">
@@ -184,15 +169,10 @@ const ProjectList = () => {
                 </Link>
               </h2>
               <hr />
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sitesy
-                voluptatem accusantium doloremque lauda
+                <p>
+                Développement d’un site vitrine réalisé from scratch en collaboration avec l'agence web <a href="https://m-com.fr"> Mcom.</a> <br /> 
+                Design, intégration des contenus et animations ont été entièrement pris en charge, garantissant une interface fluide et immersive.
               </p>
-              <Link legacyBehavior href="/project-details">
-                <a className="read-more">
-                  Plus d'informations <i className="far fa-arrow-right" />
-                </a>
-              </Link>
             </div>
           </div>
           <div className="project-item style-two">
@@ -209,14 +189,9 @@ const ProjectList = () => {
               </h2>
               <hr />
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sitesy
-                voluptatem accusantium doloremque lauda
-              </p>
-              <Link legacyBehavior href="/project-details">
-                <a className="read-more">
-                  Project Details <i className="far fa-arrow-right" />
-                </a>
-              </Link>
+              Conception de maquettes d’application mobile en collaboration avec l'agence web <a href="https://m-com.fr"> Mcom.</a> <br /> 
+              Création d’une interface ergonomique et intuitive, pensée pour offrir une expérience utilisateur optimale et fluide.
+            </p>
             </div>
             <div className="image wow fadeInRight delay-0-2s">
               <img
@@ -259,14 +234,10 @@ const ProjectList = () => {
               </h2>
               <hr />
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sitesy
-                voluptatem accusantium doloremque lauda
-              </p>
-              <Link legacyBehavior href="/project-details">
-                <a className="read-more">
-                  Plus d'informations <i className="far fa-arrow-right" />
-                </a>
-              </Link>
+              Développement d’un site vitrine réalisé from scratch en collaboration avec l'agence web  
+              <a href="https://m-com.fr"> Mcom.</a> <br />  
+              De la conception à l’intégration, chaque élément a été pensé pour offrir une navigation fluide et une expérience utilisateur optimisée.
+            </p>
             </div>
           </div>
           <div className="project-item style-two">
@@ -283,14 +254,10 @@ const ProjectList = () => {
               </h2>
               <hr />
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sitesy
-                voluptatem accusantium doloremque lauda
+                Création d’un site vitrine entièrement sur-mesure avec  
+                <a href="https://m-com.fr"> Mcom.</a> <br />  
+                Design, intégration des contenus et animations ont été travaillés pour refléter parfaitement l’identité et les objectifs du client.
               </p>
-              <Link legacyBehavior href="/project-details">
-                <a className="read-more">
-                  Plus d'informations <i className="far fa-arrow-right" />
-                </a>
-              </Link>
             </div>
             <div className="image wow fadeInRight delay-0-2s">
               <img
@@ -333,8 +300,7 @@ const ProjectList = () => {
               </h2>
               <hr />
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sitesy
-                voluptatem accusantium doloremque lauda
+              Développement d’un e-commerce sur mesure avec back-office intuitif, gestion des produits, suivi des commandes et intégration des paiements sécurisés. Automatisation des campagnes newsletters pour maximiser l’engagement client
               </p>
               <Link legacyBehavior href="/project-details">
                 <a className="read-more">
