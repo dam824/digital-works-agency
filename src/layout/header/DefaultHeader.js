@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Nav from "./Nav";
-import NavSearch from "./NavSearch";
+ 
 
 const DefaultHeader = ({ singleMenu, dark }) => {
   return (
@@ -30,9 +30,7 @@ const DefaultHeader = ({ singleMenu, dark }) => {
               {/* Main Menu */}
               <Nav singleMenu={singleMenu} />
               {/* Main Menu End*/}
-            </div>
-            {/* Nav Search */}
-            <NavSearch />
+            </div>  
             {/* Menu Button */}
             <div className="menu-btns">
               {/* menu sidbar */}

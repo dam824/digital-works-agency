@@ -11,16 +11,16 @@ const E404 = () => {
           <div className="row align-items-center">
             <div className="col-lg-5">
               <div className="error-content rmb-55 wow fadeInRight delay-0-2s">
-                <h1>OPPS!</h1>
+                <h1>OUPS!</h1>
                 <div className="section-title mb-50 rmb-35">
-                  <h2>This Page Are Can't Be Found</h2>
+                  <h2>Cette page n'exsite pas</h2>
                 </div>
                 <Link legacyBehavior href="/">
                   <a className="theme-btn style-two">
-                    Go to Home <i className="far fa-arrow-right" />
+                    Retour à l'accueil <i className="far fa-arrow-right" />
                   </a>
                 </Link>
-                <div className="social-style-four d-flex mt-60 rmt-35">
+                {/* <div className="social-style-four d-flex mt-60 rmt-35">
                   <a href="#">
                     <i className="fab fa-facebook-f" /> <span>Facebook</span>
                   </a>
@@ -30,7 +30,7 @@ const E404 = () => {
                   <a href="#">
                     <i className="fab fa-dribbble" /> <span>Dribbble</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-7">

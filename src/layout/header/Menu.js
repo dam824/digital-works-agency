@@ -24,7 +24,7 @@ const DaskTopMenu = () => {
         <a href="/">Acceuil</a>
       </li>
       <li>
-        <Link legacyBehavior href="about">
+        <Link legacyBehavior href="a-propos">
           A propos
         </Link>
       </li>
@@ -33,17 +33,17 @@ const DaskTopMenu = () => {
         <a href="#">Nos services</a>
         <ul>
           <li>
-            <Link legacyBehavior href="services">
+            <Link legacyBehavior href="creation-web">
               Création de site Web
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="service-details">
+            <Link legacyBehavior href="solution-sur-mesure">
               Solutions SaaS
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="service-details2">
+            <Link legacyBehavior href="consulting">
               Audit Web & Consulting en Conformité
             </Link>
           </li>
@@ -52,12 +52,12 @@ const DaskTopMenu = () => {
           <span className="far fa-plus" />
         </div>
       </li>
-   {/*    <li>
+      <li>
         <Link href="project-list">
-          A propos
+          Nos Projets
         </Link>
-      </li> */}
-      <li className="dropdown">
+      </li> 
+     {/*  <li className="dropdown">
         <a href="#">Projets</a>
         <ul>
           <li>
@@ -79,7 +79,7 @@ const DaskTopMenu = () => {
         <div className="dropdown-btn">
           <span className="far fa-plus" />
         </div>
-      </li>
+      </li> */}
       <li className="dropdown">
         <a href="contact">Devis</a>
       </li>
@@ -104,7 +104,7 @@ const MobileMenu = () => {
         <a href="/">Acceuil</a>
       </li>
       <li>
-        <Link legacyBehavior href="about">
+        <Link legacyBehavior href="a-propos">
           A propos
         </Link>
       </li>
@@ -179,17 +179,17 @@ const MobileMenu = () => {
         <a href="#">Nos services</a>
         <ul style={activeLi("Services")}>
           <li>
-            <Link legacyBehavior href="services">
+            <Link legacyBehavior href="creations-web">
               Création de site Web
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="service-details">
+            <Link legacyBehavior href="solution-sur-mesure">
               Solutions SaaS
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="service-details2">
+            <Link legacyBehavior href="consulting">
               Audit Web & Consulting en Conformité
             </Link>
           </li>
@@ -198,7 +198,12 @@ const MobileMenu = () => {
           <span className="far fa-plus" />
         </div>
       </li>
-      <li className="dropdown">
+      <li>
+        <Link href="project-list">
+          Nos Projets
+        </Link>
+      </li> 
+      {/* <li className="dropdown">
         <a href="#">Projects</a>
         <ul style={activeLi("Projects")}>
           <li>
@@ -221,7 +226,7 @@ const MobileMenu = () => {
         <div className="dropdown-btn" onClick={() => activeMenuSet("Projects")}>
           <span className="far fa-plus" />
         </div>
-      </li>
+      </li> */}
       <li className="dropdown">
             <a href="contact">Devis</a>
           </li>
@@ -229,7 +234,7 @@ const MobileMenu = () => {
   );
 };
 
-const SingleMenu = () => {
+/* const SingleMenu = () => {
   return (
     <ul className="navigation onepage clearfix">
       <li>
@@ -253,3 +258,4 @@ const SingleMenu = () => {
     </ul>
   );
 };
+ */

@@ -31,7 +31,7 @@ const Index = () => {
         </div>
         <div className="container-fluid">
           <div className="hero-bottom-image">
-            <img src="assets/images/hero/hero.jpg" alt="Hero" />
+            <img src="assets/images/hero/home-banner-2.webp" alt="Image de bureaux de l'ange Digital Works " />
             <div className="hero-social">
               
               <a href="https://www.linkedin.com/in/dagorydamien/">
@@ -50,14 +50,14 @@ const Index = () => {
       <section className="about-area pt-130 rpt-100 rel z-1">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-xl-5 col-lg-3">
+           {/*  <div className="col-xl-5 col-lg-3">
               <div className="about-image rmb-45 wow fadeInUp delay-0-2s">
                 <img
                   src="assets/images/about/circle-text.svg"
                   alt="Circle Text"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="col-xl-7 col-lg-9">
               <div className="about-content wow fadeInUp delay-0-4s">
                 <div className="section-title mb-40">
@@ -347,8 +347,10 @@ const Index = () => {
             </div>
             <div className="image">
               <img
-                src="assets/images/projects/europbots.webp"
+                src="assets/images/projects/novagroupe.webp"
                 alt="Project TimeLine Image"
+                width={374}
+                height={245}
               />
             </div>
             <div className="right-btn">
@@ -372,6 +374,9 @@ const Index = () => {
               <img
                 src="assets/images/projects/nanterre-dom.webp"
                 alt="Project TimeLine Image"
+                width={374}
+                height={245}
+
               />
             </div>
             <div className="right-btn">
@@ -395,6 +400,8 @@ const Index = () => {
               <img
                 src="assets/images/projects/seo2.webp"
                 alt="Project TimeLine Image"
+                width={374}
+                height={245}
               />
             </div>
             <div className="right-btn">

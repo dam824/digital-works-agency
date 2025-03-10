@@ -5,11 +5,12 @@ const ProjectList = () => {
   return (
     <Layout dark>
       {/* Page Banner Start */}
-      <PageBanner pageName={"Project List"} />
+      <PageBanner pageName={"Nos Projets"} />
       {/* Page Banner End */}
       {/* Project List Area start */}
       <section className="project-list-area pt-130 rpt-100 pb-10 rpb-25">
         <div className="container">
+          {/* site rc a changer */}
           <div className="project-item style-two">
             <div className="image wow fadeInLeft delay-0-2s">
               <img
@@ -45,71 +46,6 @@ const ProjectList = () => {
           <div className="project-item style-two">
             <div className="content wow fadeInLeft delay-0-2s">
               <Link legacyBehavior href="/projects">
-                <a className="category">Projet web</a>
-              </Link>
-              <h2>
-                <Link legacyBehavior href="https://europbots.com/">
-                  <a>
-                    Site <i>Vitrine</i>
-                  </a>
-                </Link>
-              </h2>
-              <hr />
-              <p>
-              Intégration front-end et animations du site vitrine en collaboration avec l'agence web <a href="https://redcat-studio.fr">Redcat Studio.</a>
-              Développement réalisé à partir des maquettes fournies par leur équipe de graphistes, garantissant une interface fluide et immersive.
-            </p>
-              
-            </div>
-            <div className="image wow fadeInRight delay-0-2s">
-              <img
-                src="assets/images/projects/europots2.webp"
-                alt="Project List"
-                width={520}
-                height={535}
-              />
-              <Link legacyBehavior href="/project-details">
-                <a className="project-btn">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div className="project-item style-two">
-            <div className="image wow fadeInLeft delay-0-2s">
-              <img
-                src="assets/images/projects/azul1.webp"
-                alt="Project List"
-                width={520}
-                height={535}
-              />
-              <Link legacyBehavior href="/project-details">
-                <a className="project-btn">
-                  <i className="far fa-arrow-right" />
-                </a>
-              </Link>
-            </div>
-            <div className="content wow fadeInRight delay-0-2s">
-              <Link legacyBehavior href="/projects">
-                <a className="category">Projet Web</a>
-              </Link>
-              <h2>
-                <Link legacyBehavior href="/project-details">
-                  <a>
-                    Site <i>Vitrine</i>
-                  </a>
-                </Link>
-              </h2>
-              <hr />
-              <p>
-              Développement front-end et animations réalisées en partenariat avec l'agence web <a href="https://redcat-studio.fr">Redcat Studio.</a>.  
-              L’intégration a été effectuée à partir des maquettes conçues par leur équipe graphique, assurant une navigation fluide et un rendu visuel impactant.
-            </p>
-            </div>
-          </div>
-          <div className="project-item style-two">
-            <div className="content wow fadeInLeft delay-0-2s">
-              <Link legacyBehavior href="/projects">
                 <a className="category">Solution Sass</a>
               </Link>
               <h2>
@@ -136,7 +72,7 @@ const ProjectList = () => {
                 width={520}
                 height={535}
               />
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="https://prometal-13.fr/">
                 <a className="project-btn">
                   <i className="far fa-arrow-right" />
                 </a>
@@ -200,7 +136,7 @@ const ProjectList = () => {
                 width={520}
                 height={535}
               />
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="https://harmonia-transports.fr/">
                 <a className="project-btn">
                   <i className="far fa-arrow-right" />
                 </a>
@@ -242,7 +178,7 @@ const ProjectList = () => {
           </div>
           <div className="project-item style-two">
             <div className="content wow fadeInLeft delay-0-2s">
-              <Link legacyBehavior href="/projects">
+              <Link legacyBehavior href="https://smr-marseille.fr/">
                 <a className="category">Projet Web</a>
               </Link>
               <h2>
