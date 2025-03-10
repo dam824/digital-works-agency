@@ -6,33 +6,42 @@ import React, { useState } from 'react';
 
 const Contact = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setError(null);
+
     const data = {
       name: e.target.name.value,
       phone_number: e.target.phone_number.value,
       email: e.target.email.value,
       message: e.target.message.value,
     };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-    //envoi les data au serveur
-    const options = {
-      method : 'POST',
-      headers: {
-        'Content-Type' : 'application/json',
-      },
-      body: JSONdata
-    }
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-    console.log(resData);
-    if(response.status === 200){
-      console.log('message envoye');
-      setEmailSubmitted(true);
+      const resData = await response.json();
+      if (response.status === 200) {
+        console.log("Message envoyé :", resData);
+        setEmailSubmitted(true);
+      } else {
+        throw new Error(resData.error || "Erreur inconnue");
+      }
+    } catch (error) {
+      console.error("Erreur d'envoi :", error);
+      setError("Impossible d'envoyer votre message. Réessayez plus tard.");
+    } finally {
+      setLoading(false);
+      document
+      .querySelector("body")
+      .classList.remove("side-content-visible");
     }
   };
 
@@ -106,6 +115,8 @@ const Contact = () => {
                   <span className="sub-title mb-15">Dites-nous tout</span>
                   <h3>Posez-nous vos questions</h3>
                 </div>
+                 {/*Form*/}
+                 {!emailSubmitted ? (
                 <form
                   id="contactForm"
                   className="contactForm"
@@ -199,6 +210,9 @@ const Contact = () => {
                     </div>
                   </div>
                 </form>
+                ) : (
+                  <p className="success-message">✅ Merci ! Votre message a bien été envoyé.</p>
+                )}
               </div>
             </div>
           </div>
