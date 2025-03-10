@@ -89,13 +89,23 @@ const DefaultFooter = ({ dark }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="team">
-                      Nos services
+                    <Link legacyBehavior href="creation-web">
+                    Création de site Web
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="blog">
-                      Nos oeuvres
+                    <Link legacyBehavior href="solution-sur-mesure">
+                    Solutions sur mesure
+                    </Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="consulting">
+                    Consulting & Accompagnement
+                    </Link>
+                  </li>
+                  <li>
+                    <Link legacyBehavior href="project-list">
+                      Nos projets
                     </Link>
                   </li>
                   <li>
