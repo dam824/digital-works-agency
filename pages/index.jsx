@@ -329,9 +329,9 @@ const Index = () => {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end">
-              <Link legacyBehavior href="/projects">
+              <Link legacyBehavior href="projects">
                 <a className="theme-btn mb-25 wow fadeInRight delay-0-2s">
-                  Voir plus de projets<i className="far fa-arrow-right" />
+                  Nos projets<i className="far fa-arrow-right" />
                 </a>
               </Link>
             </div>
@@ -340,7 +340,7 @@ const Index = () => {
             <div className="content">
               <span className="serial-number">01</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="creation-web">
                   <a>Site vitrine</a>
                 </Link>
               </h4>
@@ -354,7 +354,7 @@ const Index = () => {
               />
             </div>
             <div className="right-btn">
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="projects">
                 <a className="details-btn">
                   <i className="fal fa-long-arrow-right" />
                 </a>
@@ -365,7 +365,7 @@ const Index = () => {
             <div className="content">
               <span className="serial-number">02</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="solution-sur-mesure">
                   <a>Solution Sass</a>
                 </Link>
               </h4>
@@ -380,7 +380,7 @@ const Index = () => {
               />
             </div>
             <div className="right-btn">
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="projects">
                 <a className="details-btn">
                   <i className="fal fa-long-arrow-right" />
                 </a>
@@ -391,7 +391,7 @@ const Index = () => {
             <div className="content">
               <span className="serial-number">03</span>
               <h4>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="consulting">
                   <a>Expertise SEO & réglementations RGPD</a>
                 </Link>
               </h4>
