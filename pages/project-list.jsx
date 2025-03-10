@@ -10,29 +10,16 @@ const ProjectList = () => {
       {/* Project List Area start */}
       <section className="project-list-area pt-130 rpt-100 pb-10 rpb-25">
         <div className="container">
-          {/* site rc a changer */}
-          <div className="project-item style-two">
-            <div className="image wow fadeInLeft delay-0-2s">
-              <img
-                src="assets/images/projects/novagroupe.webp"
-                alt="Project List"
-                width={520}
-                height={535}
-              />
-              <Link legacyBehavior href="/project-details">
-                <a className="project-btn">
-                  <i className="far fa-arrow-right" />
+        <div className="project-item style-two">
+            <div className="content wow fadeInLeft delay-0-2s">
+              <Link legacyBehavior href="/projects">
+                <a className="category">Projet Web
                 </a>
-              </Link>
-            </div>
-            <div className="content wow fadeInRight delay-0-2s">
-              <Link legacyBehavior href="novagroupe.eu">
-                <a className="category">Projet web</a>
               </Link>
               <h2>
                 <Link legacyBehavior href="/project-details">
                   <a>
-                    Site <i>Vitrine</i>
+                  Site <i>Vitrine</i>
                   </a>
                 </Link>
               </h2>
@@ -42,37 +29,14 @@ const ProjectList = () => {
                 Spécialiste français des poêles, inserts, cheminées et cuisinières à bois, proposant des produits haut de gamme conçus avec des matériaux de qualité.
               </p>
             </div>
-          </div>
-          <div className="project-item style-two">
-            <div className="content wow fadeInLeft delay-0-2s">
-              <Link legacyBehavior href="/projects">
-                <a className="category">Solution Sass</a>
-              </Link>
-              <h2>
-                <Link legacyBehavior href="/project-details">
-                  <a>
-                    Logiciel <i>Sur Mesure</i>
-                  </a>
-                </Link>
-              </h2>
-              <hr />
-              <p>
-              Développement sur mesure d’un outil d’automatisation des envois de SMS, optimisant la gestion du temps et fluidifiant la communication.
-              </p>
-              <Link legacyBehavior href="/project-details">
-                <a className="read-more">
-                  Project Details <i className="far fa-arrow-right" />
-                </a>
-              </Link>
-            </div>
             <div className="image wow fadeInRight delay-0-2s">
               <img
-                src="assets/images/projects/nanterre-dom-1.webp"
+                src="assets/images/projects/novagroupe.webp"
                 alt="Project List"
                 width={520}
                 height={535}
               />
-              <Link legacyBehavior href="https://prometal-13.fr/">
+              <Link legacyBehavior href="https://novagroupe.eu">
                 <a className="project-btn">
                   <i className="far fa-arrow-right" />
                 </a>
@@ -210,6 +174,42 @@ const ProjectList = () => {
             </div>
           </div>
           <div className="project-item style-two">
+            <div className="content wow fadeInLeft delay-0-2s">
+              <Link legacyBehavior href="/projects">
+                <a className="category">Solution Sass</a>
+              </Link>
+              <h2>
+                <Link legacyBehavior href="/project-details">
+                  <a>
+                    Logiciel <i>Sur Mesure</i>
+                  </a>
+                </Link>
+              </h2>
+              <hr />
+              <p>
+              Développement sur mesure d’un outil d’automatisation des envois de SMS, optimisant la gestion du temps et fluidifiant la communication.
+              </p>
+              <Link legacyBehavior href="/project-details">
+                <a className="read-more">
+                  Project Details <i className="far fa-arrow-right" />
+                </a>
+              </Link>
+            </div>
+            <div className="image wow fadeInRight delay-0-2s">
+              <img
+                src="assets/images/projects/nanterre-dom-1.webp"
+                alt="Project List"
+                width={520}
+                height={535}
+              />
+              <Link legacyBehavior href="https://prometal-13.fr/">
+                <a className="project-btn">
+                  <i className="far fa-arrow-right" />
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="project-item style-two">
             <div className="image wow fadeInLeft delay-0-2s">
               <img
                 src="assets/images/projects/so-delicious.webp"
@@ -224,7 +224,7 @@ const ProjectList = () => {
               </Link>
             </div>
             <div className="content wow fadeInRight delay-0-2s">
-              <Link legacyBehavior href="/projects">
+              <Link legacyBehavior href="">
                 <a className="category">Projet Web</a>
               </Link>
               <h2>
