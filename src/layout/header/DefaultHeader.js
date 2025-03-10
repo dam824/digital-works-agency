@@ -16,11 +16,12 @@ const DefaultHeader = ({ singleMenu, dark }) => {
                     <img
                       src={
                         dark
-                          ? "assets/images/logos/Digital-works-logo.svg"
+                          ? "assets/images/logos/Digital-works-logo-v1.svg"
                           : "assets/images/logos/logo.png"
                       }
-                      alt="Logo"
+                      alt="Logo agence digital works "
                       title="Logo"
+                      height={150}
                     />
                   </a>
                 </Link>

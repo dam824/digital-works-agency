@@ -166,7 +166,7 @@ const ProjectList = () => {
                 width={520}
                 height={535}
               />
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="#">
                 <a className="project-btn">
                   <i className="far fa-arrow-right" />
                 </a>
@@ -175,11 +175,11 @@ const ProjectList = () => {
           </div>
           <div className="project-item style-two">
             <div className="content wow fadeInLeft delay-0-2s">
-              <Link legacyBehavior href="/projects">
+              <Link legacyBehavior href="projet-nanterredom">
                 <a className="category">Solution Sass</a>
               </Link>
               <h2>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="projet-nanterredom">
                   <a>
                     Logiciel <i>Sur Mesure</i>
                   </a>
@@ -189,9 +189,9 @@ const ProjectList = () => {
               <p>
               Développement sur mesure d’un outil d’automatisation des envois de SMS, optimisant la gestion du temps et fluidifiant la communication.
               </p>
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="projet-nanterredom">
                 <a className="read-more">
-                  Project Details <i className="far fa-arrow-right" />
+                  Plus d'informations <i className="far fa-arrow-right" />
                 </a>
               </Link>
             </div>
@@ -202,7 +202,7 @@ const ProjectList = () => {
                 width={520}
                 height={535}
               />
-              <Link legacyBehavior href="https://prometal-13.fr/">
+              <Link legacyBehavior href="#">
                 <a className="project-btn">
                   <i className="far fa-arrow-right" />
                 </a>
@@ -228,7 +228,7 @@ const ProjectList = () => {
                 <a className="category">Projet Web</a>
               </Link>
               <h2>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="project-sodelicious">
                   <a>
                     Site <i>E-commerce</i>
                   </a>
@@ -238,7 +238,7 @@ const ProjectList = () => {
               <p>
               Développement d’un e-commerce sur mesure avec back-office intuitif, gestion des produits, suivi des commandes et intégration des paiements sécurisés. Automatisation des campagnes newsletters pour maximiser l’engagement client
               </p>
-              <Link legacyBehavior href="/project-details">
+              <Link legacyBehavior href="project-sodelicious">
                 <a className="read-more">
                   Plus d'informations <i className="far fa-arrow-right" />
                 </a>
