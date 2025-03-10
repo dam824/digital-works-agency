@@ -1,28 +1,35 @@
-import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.FROM_EMAIL;
-
-export async function POST(req, res){
-    const {email, subject, message } = await req.json();
-    console.log(email);
-    try{
-        const data = await resend.emails.send({
-            from: fromEmail,
-            to: ["damiendagory@gmail.com", email],
-            subject: subject,
-            react: (
-                <>
-                <h1>{subject}</h1> 
-                <p>Merci de m&apos;avoir contacter</p>
-                <p>Nouveau message envoyé</p>
-                <p>{message}</p>
-                </> 
-            )
-        });
-        return NextResponse.json(data);
-    }catch(error){
-        return NextResponse.json({error});
+export default async function handler(req,res){
+    if(req.method !== "POST"){
+        return res.status(405).json({error :"Méthod non authorisée"});
     }
+
+    const {name, email, message} = req.body;
+
+    const transporter = nodemailer.createTransport({
+        host: "ssl0.ovh.net",
+        port: 465, // Port SMTP sécurisé
+        secure: true, // Utilisation de SSL
+        auth: {
+          user: process.env.FROM_EMAIL,  
+          pass: process.env.EMAIL_MDP,  
+        },
+      });
+
+      try {
+        await transporter.sendMail({
+            from: `"${name}" <${email}>`, // L'email de l'expéditeur
+            to: "contact@digital-works.org", // reception emails
+            subject: "Nouveau message via le formulaire de contact",
+            text: message, // Contenu en texte brut
+            html: `<p><strong>Nom :</strong> ${name}</p>
+                   <p><strong>Email :</strong> ${email}</p>
+                   <p><strong>Message :</strong> ${message}</p>`,
+        });
+        return res.status(200).json({ success: true, message: "Message envoyé avec succès" });
+      }catch(error){
+        console.error("Erreur d'envoi d'email :", error);
+    return res.status(500).json({ error: "Erreur lors de l'envoi du mail" });
+      }
 }
