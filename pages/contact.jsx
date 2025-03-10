@@ -69,12 +69,12 @@ const Contact = () => {
                   <div className="col-sm-6">
                     <div className="our-location-address mb-40">
                       <h5>Franconville</h5>
-                      <a className="mailto" href="mailto:digitalworks@gmail.com">
-                        digitalworks@gmail.com
+                      <a className="mailto" href="mailto:contact@digital-works.org">
+                        contact@digital-works.org
                       </a>
                       <br />
-                      <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +33....
+                      <a className="callto" href="callto:+33631149803">
+                        <i className="fas fa-phone" /> +33631149803
                       </a>
                     </div>
                   </div>
@@ -82,12 +82,12 @@ const Contact = () => {
                     <div className="our-location-address mb-40">
                       <h5>Les Epesses</h5>
                       
-                      <a className="mailto" href="mailto:digitalworks@gmail.com">
-                        digitalworks@gmail.com
+                      <a className="mailto" href="mailto:contact@digital-works.org">
+                      contact@digital-works.org
                       </a>
                       <br />
-                      <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +33 ...
+                      <a className="callto" href="callto:+33631149803">
+                        <i className="fas fa-phone" /> +33631149803
                       </a>
                     </div>
                   </div>
