@@ -33,8 +33,7 @@ const ProjectList = () => {
               <img
                 src="assets/images/projects/novagroupe.webp"
                 alt="Project List"
-                width={520}
-                height={535}
+                
               />
               <Link legacyBehavior href="https://novagroupe.eu">
                 <a className="project-btn">
@@ -48,8 +47,7 @@ const ProjectList = () => {
               <img
                 src="assets/images/projects/prometal1.webp"
                 alt="Project List"
-                width={520}
-                height={535}
+                
               />
               <Link legacyBehavior href="/project-details">
                 <a className="project-btn">
@@ -97,8 +95,7 @@ const ProjectList = () => {
               <img
                 src="assets/images/projects/quick-parking.webp"
                 alt="Project List"
-                width={520}
-                height={535}
+                
               />
               <Link legacyBehavior href="https://harmonia-transports.fr/">
                 <a className="project-btn">
@@ -112,8 +109,7 @@ const ProjectList = () => {
               <img
                 src="assets/images/projects/harmonia.webp"
                 alt="Project List"
-                width={520}
-                height={535}
+                 
               />
               <Link legacyBehavior href="/project-details">
                 <a className="project-btn">
@@ -163,8 +159,7 @@ const ProjectList = () => {
               <img
                 src="assets/images/projects/smr.webp"
                 alt="Project List"
-                width={520}
-                height={535}
+                 
               />
               <Link legacyBehavior href="#">
                 <a className="project-btn">
@@ -199,8 +194,7 @@ const ProjectList = () => {
               <img
                 src="assets/images/projects/nanterre-dom-1.webp"
                 alt="Project List"
-                width={520}
-                height={535}
+                
               />
               <Link legacyBehavior href="#">
                 <a className="project-btn">
@@ -214,8 +208,7 @@ const ProjectList = () => {
               <img
                 src="assets/images/projects/so-delicious.webp"
                 alt="Project List"
-                width={520}
-                height={535}
+                 
               />
               <Link legacyBehavior href="/project-details">
                 <a className="project-btn">

@@ -21,7 +21,7 @@ const DaskTopMenu = () => {
   return (
     <ul className="navigation d-none d-lg-flex desktop-menu">
       <li className="dropdown">
-        <a href="/">Acceuil</a>
+        <a href="/">Accueil</a>
       </li>
       <li>
         <Link legacyBehavior href="a-propos">
@@ -101,7 +101,7 @@ const MobileMenu = () => {
   return (
     <ul className="navigation d-block d-lg-none mobile-menu">
       <li className="dropdown">
-        <a href="/">Acceuil</a>
+        <a href="/">Accueil</a>
       </li>
       <li>
         <Link legacyBehavior href="a-propos">
