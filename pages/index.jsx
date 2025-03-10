@@ -679,9 +679,9 @@ const Index = () => {
               >
                 <div className="icon-title">
                   <div className="icon">
-                    <img src="assets/images/icons/price.svg" alt="Icon" />
+                    <img src="assets/images/icons/starter.png" alt="Icon de l'offre starter" />
                   </div>
-                  <h5>Pack Essentiel</h5>
+                  <h5>Pack Starter</h5>
                 </div>
                 <p>
                 Pour être en ligne rapidement et efficacement
@@ -720,9 +720,9 @@ const Index = () => {
               >
                 <div className="icon-title">
                   <div className="icon">
-                    <img src="assets/images/icons/price.svg" alt="Icon" />
+                    <img src="assets/images/icons/boost.png" alt="Icon de l'offre boost" />
                   </div>
-                  <h5>Pack Sérénité</h5>
+                  <h5>Pack Boost</h5>
                 </div>
                 <p>
                 Idéal pour : E-commerce, SaaS, entreprises avec un besoin sur-mesure
