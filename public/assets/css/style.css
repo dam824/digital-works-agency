@@ -3903,7 +3903,7 @@ h6, .h6 {
   .hero-content h1 span {
     color: transparent;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: white; }
+    -webkit-text-stroke-color: #55e6a5; }
 
 @media only screen and (max-width: 991px) {
   .hero-right-image {
@@ -7154,6 +7154,7 @@ blockquote {
 /*******************************************************/
 /****************** ## Pricing Area ********************/
 /*******************************************************/
+
 .pricing-plan-item {
   z-index: 2;
   -webkit-transition: 0.5s;
