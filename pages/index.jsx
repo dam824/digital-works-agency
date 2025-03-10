@@ -703,7 +703,7 @@ const Index = () => {
                   <img src="assets/images/shapes/right-arrow.png" alt="Arrow" />
                   <span className="offer-text">Save 15%</span>
                 </div> */}
-                <Link legacyBehavior href="/pricing">
+                <Link legacyBehavior href="contact">
                   <a className="theme-btn w-100">
                     Demander un devis <i className="far fa-arrow-right" />
                   </a>
@@ -744,7 +744,7 @@ const Index = () => {
                   <img src="assets/images/shapes/right-arrow.png" alt="Arrow" />
                   <span className="offer-text">Save 15%</span>
                 </div> */}
-                <Link legacyBehavior href="/pricing">
+                <Link legacyBehavior href="contact">
                   <a className="theme-btn w-100">
                     Demander un devis <i className="far fa-arrow-right" />
                   </a>

@@ -267,7 +267,7 @@ const ServiceDetails2 = () => {
                   <li>Vérification des normes et conformité RGPD</li>
                   <li>Test de compatibilité sur différents supports (responsive) </li>
                 </ul>
-                <Link legacyBehavior href="/pricing">
+                <Link legacyBehavior href="contact">
                   <a className="theme-btn w-100">
                      Demander un devis <i className="far fa-arrow-right" />
                   </a>
@@ -298,7 +298,7 @@ const ServiceDetails2 = () => {
                   <li>Analyse approfondie de la conformité RGPD</li>
                   <li>Recommandations stratégiques d’amélioration</li>
                 </ul>
-                <Link legacyBehavior href="/pricing">
+                <Link legacyBehavior href="contact">
                   <a className="theme-btn w-100">
                     Demander un devis <i className="far fa-arrow-right" />
                   </a>
@@ -322,7 +322,7 @@ const ServiceDetails2 = () => {
                   <li>Analyse des contrats et conformité des engagements</li>
                   <li>Accompagnement juridique pour faire valoir vos droits</li>
                 </ul>
-                <Link legacyBehavior href="/pricing">
+                <Link legacyBehavior href="contact">
                   <a className="theme-btn w-100">
                     Demander un devis <i className="far fa-arrow-right" />
                   </a>
