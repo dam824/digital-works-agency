@@ -22,14 +22,14 @@ export default function App({ Component, pageProps }) {
     <Fragment>
       <Head>
       <meta charSet="utf-8" />
-      <meta name="description" content="DigitalWorks - Agence Web spécialisée en création de sites internet & SEO à Franconville et Les Herbiers, Cholet. Développement sur-mesure, e-commerce et visibilité digitale optimisée." />
+      <meta name="description" content="DigitalWorks, agence web spécialisée en création de sites internet et SEO à Franconville, Les Herbiers et Cholet. Boostez votre visibilité locale avec nos solutions digitales sur-mesure. Contactez-nous !" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {/* Title */}
-        <title>Digital Works - Agence Digitale</title>
+        <title>DigitalWorks - Agence Web & SEO | Création de site internet</title>
         {/* Favicon Icon */}
         <link
           rel="shortcut icon"
