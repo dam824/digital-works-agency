@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
     <Fragment>
       <Head>
       <meta charSet="utf-8" />
-      <meta name="description" content="DigitalWorks - Agence Web spécialisée en création de sites internet & SEO à Val d'Oise et Vendée. Développement sur-mesure, e-commerce et visibilité digitale optimisée." />
+      <meta name="description" content="DigitalWorks - Agence Web spécialisée en création de sites internet & SEO à Franconville et Les Herbiers, Cholet. Développement sur-mesure, e-commerce et visibilité digitale optimisée." />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
