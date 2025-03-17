@@ -1,6 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Disallow: /api/
+# Host
+Host: https://digital-works.org
 
-Sitemap: https://www.digital-works.org/sitemap.xml
+# Sitemaps
+Sitemap: https://digital-works.org/sitemap.xml

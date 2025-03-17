@@ -57,9 +57,31 @@ export default function App({ Component, pageProps }) {
         <link rel="stylesheet" href="assets/css/slick.min.css" />
         {/* Main Style */}
         <link rel="stylesheet" href="assets/css/style.css" />
+
+              {/* JSON-LD pour le SEO */}
+              <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Digital Works - Agence Web & SEO",
+              "url": "https://digital-works.org",
+              "description":
+                "Agence web experte en création de sites internet et SEO à Franconville, Les Herbiers et Cholet.",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://digital-works.org/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+        
       </Head>
       {!loaded && <PreLoader />}
       {loaded && <Component {...pageProps} />}
+      
     </Fragment>
   );
 }
