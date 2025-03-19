@@ -20,17 +20,7 @@ const E404 = () => {
                     Retour à l'accueil <i className="far fa-arrow-right" />
                   </a>
                 </Link>
-                {/* <div className="social-style-four d-flex mt-60 rmt-35">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" /> <span>Facebook</span>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" /> <span>Twitter</span>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-dribbble" /> <span>Dribbble</span>
-                  </a>
-                </div> */}
+               
               </div>
             </div>
             <div className="col-lg-7">
@@ -44,7 +34,7 @@ const E404 = () => {
           </div>
         </div>
       </section>
-      {/* 404 Error Section End */}
+     
     </Layout>
   );
 };

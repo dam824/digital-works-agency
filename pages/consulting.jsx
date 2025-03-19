@@ -191,8 +191,7 @@ const ServiceDetails2 = () => {
           </div>
         </div>
       </section>
-      {/* Service Style Two end */}
-      {/* Headline area start */}
+ 
       <div className="headline-area bgc-primary pt-80 pb-65">
         <div className="container-fluid">
           <div className="headline-wrap marquee">
@@ -237,8 +236,7 @@ const ServiceDetails2 = () => {
           </div>
         </div>
       </div>
-      {/* Headline Area end */}
-      {/* Pricing start */}
+    
       <section className="pricing-plan-area pt-130 rpt-100 rel z-1">
         <div className="container">
           <div className="row justify-content-center">
@@ -257,8 +255,7 @@ const ServiceDetails2 = () => {
                 </div>
                 <h5>Audit Essentiel</h5>
                 <span className="price-text">
-                 {/*  <span className="before">$</span>
-                  <span className="price">18.3</span>{" "} */}
+               
                   <span className="after">Une vision claire de votre site</span>
                 </span>
                 <ul className="list-style-one">
@@ -288,8 +285,7 @@ const ServiceDetails2 = () => {
                 </div>
                 <h5>Audit Expert</h5>
                 <span className="price-text">
-                  {/* <span className="before">$</span>
-                  <span className="price">49.3</span>{" "} */}
+                  
                   <span className="after">Optimisation & sécurité avancées</span>
                 </span>
                 <ul className="list-style-one">
@@ -312,8 +308,7 @@ const ServiceDetails2 = () => {
                 </div>
                 <h5>Audit Premium</h5>
                 <span className="price-text">
-                  {/* <span className="before">$</span>
-                  <span className="price">98.3</span>{" "} */}
+                   
                   <span className="after">Expertise complète & accompagnement</span>
                 </span>
                 <ul className="list-style-one">
@@ -339,61 +334,7 @@ const ServiceDetails2 = () => {
           }}
         />
       </section>
-      {/* Pricing end */}
-      {/* FAQ's Area start */}
-     {/*  <section className="faq-area pt-90 rpt-55 pb-130 rpb-75 rel z-1">
-        <div className="container">
-          <div className="row align-items-center gap-100">
-            <div className="col-lg-5">
-              <div className="faq-iamge-part rmb-55 wow fadeInLeft delay-0-2s">
-                <img src="assets/images/faqs/faq-two.jpg" alt="FAQs" />
-              </div>
-            </div>
-            <div className="col-lg-7">
-              <div className="faq-content-part wow fadeInRight delay-0-2s">
-                <div className="section-title mb-60">
-                  <span className="sub-title mb-15">Asked Questions</span>
-                  <h2>Frequently Asked Questions</h2>
-                </div>
-                <Accordion
-                  defaultActiveKey="collapse0"
-                  className="accordion"
-                  id="faq-accordion-two"
-                >
-                  {accordionData.map((data, i) => (
-                    <YgencyAccordion
-                      title={data.title}
-                      content={data.content}
-                      key={data.id}
-                      event={`collapse${i}`}
-                      onClick={() =>
-                        setActive(
-                          active == `collapse${i}` ? "" : `collapse${i}`
-                        )
-                      }
-                      active={active}
-                    />
-                  ))}
-                </Accordion>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="faq-shapes">
-          <img
-            className="shape left"
-            src="assets/images/shapes/ellipse-left.png"
-            alt="Shape"
-          />
-          <img
-            className="shape right"
-            src="assets/images/shapes/ellipse-right.png"
-            alt="Shape"
-          />
-        </div>
-      </section> */}
-      {/* FAQ's Area end */}
-      {/* Work With Area start */}
+      
       <section className="work-with-area pb-150 rpb-145 rel z-1">
         <div className="container">
           <div className="row justify-content-center pb-45 rpb-25">
@@ -413,8 +354,7 @@ const ServiceDetails2 = () => {
         </div>
         
       </section>
-      {/* Work With Area end */}
-      {/* footer area start */}
+     
     </Layout>
   );
 };

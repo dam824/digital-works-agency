@@ -112,50 +112,7 @@ const ProjectDetails = () => {
           <hr />
         </div>
       </section>
-      {/* Project Details Content Area End */}
-      {/* Next Prev Post Area start */}
-      {/* <section className="next-prev-post-area">
-        <div className="container container-1290">
-          <div className="next-prev-post pt-110 rpt-80 pb-100 rpb-70">
-            <div className="prev-post wow fadeInLeft delay-0-2s">
-              <div className="image">
-                <img src="assets/images/projects/prev-project.jpg" alt="Prev" />
-              </div>
-              <div className="content">
-                <h4>
-                  <Link legacyBehavior href="project-details">
-                    Digital Product Design
-                  </Link>
-                </h4>
-                <Link legacyBehavior href="/project-details">
-                  <a className="read-more">
-                    Prev <i className="far fa-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="next-post wow fadeInRight delay-0-2s">
-              <div className="content">
-                <h4>
-                  <Link legacyBehavior href="project-details">
-                    Web Development
-                  </Link>
-                </h4>
-                <Link legacyBehavior href="/project-details">
-                  <a className="read-more">
-                    Next <i className="far fa-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-              <div className="image">
-                <img src="assets/images/projects/next-project.jpg" alt="Next" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Next Prev Post Area end */}
-      {/* footer area start */}
+      
     </Layout>
   );
 };

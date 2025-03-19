@@ -299,49 +299,7 @@ const ServiceDetails = () => {
           </div>
         </div>
       </section>
-      {/* Why Choose Us end */}
-      {/* FAQ's Area start */}
-     {/*  <section className="faq-area pt-130 rpt-95 pb-105 rpb-75 rel z-1">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-4">
-              <div className="faq-iamge-part rmb-55 wow fadeInLeft delay-0-2s">
-                <img src="assets/images/faqs/faq.png" alt="FAQs" />
-              </div>
-            </div>
-            <div className="col-lg-8">
-              <div className="faq-content-part wow fadeInRight delay-0-2s">
-                <div className="section-title mb-60">
-                  <span className="sub-title mb-15">Foire Aux Questions</span>
-                  <h2>Des réponses claires pour un projet en toute sérénité</h2>
-                </div>
-                <Accordion
-                  defaultActiveKey="collapse0"
-                  className="accordion"
-                  id="faq-accordion-two"
-                >
-                  {accordionData.map((data, i) => (
-                    <YgencyAccordion
-                      title={data.title}
-                      content={data.content}
-                      key={data.id}
-                      event={`collapse${i}`}
-                      onClick={() =>
-                        setActive(
-                          active == `collapse${i}` ? "" : `collapse${i}`
-                        )
-                      }
-                      active={active}
-                    />
-                  ))}
-                </Accordion>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* FAQ's Area end */}
-      {/* footer area start */}
+ 
     </Layout>
   );
 };

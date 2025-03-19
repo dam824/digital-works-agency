@@ -2,13 +2,45 @@ import Layout from "@/src/layout/Layout";
 import { sliderProps } from "@/src/sliderProps";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect } from "react";
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
 });
 
 const Index = () => {
+  useEffect(() => {
+    const lazyBackgrounds = document.querySelectorAll(".lazyload");
+  
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            let el = entry.target;
+            let bg = el.getAttribute("data-bg");
+            if (bg) {
+              el.style.backgroundImage = `url(${bg})`;
+              el.classList.remove("lazyload"); // Pour éviter de recharger l'image
+              observer.unobserve(el);
+            }
+          }
+        });
+      },
+      {
+        rootMargin: "100px",
+        threshold: 0.1, // Charge l'image un peu avant qu'elle apparaisse
+      }
+    );
+  
+    lazyBackgrounds.forEach((el) => observer.observe(el));
+  
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <Layout dark>
       {/* Hero Section Start */}
@@ -24,14 +56,30 @@ const Index = () => {
             </div>
             <div className="col-lg-4">
               <div className="hero-right-image mt-20 wow fadeInUp delay-0-4s">
-                <img src="assets/images/hero/hero-right.png" alt="Hero" />
+              
+                <Image
+                      src="/assets/images/hero/hero-right.png"
+                      alt="Image de bureaux de l'ange Digital Works"
+                      width={351}  
+                      height={307}  
+                      priority  
+    
+                    />
               </div>
             </div>
           </div>
         </div>
         <div className="container-fluid">
           <div className="hero-bottom-image">
-            <img src="assets/images/hero/home-banner-2.webp" alt="Image de bureaux de l'ange Digital Works " />
+           
+            <Image
+                      src="/assets/images/hero/home-banner-2.webp"
+                      alt="Image de bureaux de l'ange Digital Works"
+                      width={1237}  
+                      height={588}  
+                      priority  
+    
+                    />
             <div className="hero-social">
               
               <a href="https://www.linkedin.com/in/dagorydamien/">
@@ -41,23 +89,13 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="hero-bg">
-          <img src="assets/images/hero/hero-bg.png" alt="lines" />
-        </div>
+       
       </section>
-      {/* Hero Section End */}
-      {/* About Us Area start */}
+    
       <section className="about-area pt-130 rpt-100 rel z-1">
         <div className="container">
           <div className="row justify-content-between">
-           {/*  <div className="col-xl-5 col-lg-3">
-              <div className="about-image rmb-45 wow fadeInUp delay-0-2s">
-                <img
-                  src="assets/images/about/circle-text.svg"
-                  alt="Circle Text"
-                />
-              </div>
-            </div> */}
+           
             <div className="col-xl-7 col-lg-9">
               <div className="about-content wow fadeInUp delay-0-4s">
                 <div className="section-title mb-40">
@@ -161,53 +199,22 @@ const Index = () => {
             </div>
             <div className="col-xl-6">
               <div className="what-we-do-image mb-55 wow fadeInRight delay-0-2s">
-                <img
-                  src="assets/images/services/digital-works-office-1.webp"
-                  alt="Création de sites web sur-mesure, optimisation SEO et performance digitale par Digital Works"
-                />
+               
+                    <Image
+                      src="/assets/images/services/digital-works-office-1.webp"
+                      alt="Image de bureaux de l'ange Digital Works"
+                      width={647}  
+                      height={901}  
+                      loading="lazy"  
+    
+                    />
+                
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* What We Do end */}
-      {/* Statistics Area start */}
-     {/*  <div className="statistics-area pt-75 rpt-45 rel z-1">
-        <div className="container">
-          <div className="row justify-content-between">
-            <div className="col-xl-2 col-lg-3 col-6">
-              <div className="counter-item counter-text-wrap wow fadeInUp delay-0-2s">
-                <i className="fal fa-check-circle" />
-                <Counter end={25} />
-                <span className="counter-title">Years Of Experience</span>
-              </div>
-            </div>
-            <div className="col-xl-2 col-lg-3 col-6">
-              <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
-                <i className="fal fa-check-circle" />
-                <Counter end={3} extraClass={"k"} />
-                <span className="counter-title">Project’s Complete</span>
-              </div>
-            </div>
-            <div className="col-xl-2 col-lg-3 col-6">
-              <div className="counter-item counter-text-wrap wow fadeInUp delay-0-4s">
-                <i className="fal fa-check-circle" />
-                <Counter end={48} />
-                <span className="counter-title">Professionals Team Member</span>
-              </div>
-            </div>
-            <div className="col-xl-2 col-lg-3 col-6">
-              <div className="counter-item counter-text-wrap wow fadeInUp delay-0-5s">
-                <i className="fal fa-check-circle" />
-                <Counter end={92} />
-                <span className="counter-title">Awards Winning</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* Statistics Area end */}
-      {/* Service Style Three start */}
+    
       <section className="service-three-area pt-70 rpt-40 rel z-1">
         <div className="container">
           <div className="row justify-content-center">
@@ -227,7 +234,15 @@ const Index = () => {
                       <a>Création de sites web</a>
                     </Link>
                   </h5>
-                  <img src="assets/images/services/code.png" alt="Icon" />
+                  
+                  <Image
+                      src="/assets/images/services/code.png"
+                      alt="icon"
+                      width={60}  
+                      height={60}  
+                      priority  
+    
+                    />
                 </div>
                 <div className="content">
                   <p>Nous concevons des sites vitrines, e-commerce et applications web adaptés à vos objectifs et à votre identité</p>
@@ -248,7 +263,15 @@ const Index = () => {
                       <a>Technologies modernes</a>
                     </Link>
                   </h5>
-                  <img src="assets/images/services/setting.png" alt="Icon" />
+                  
+                  <Image
+                      src="/assets/images/services/setting.png"
+                      alt="icon"
+                      width={60}  
+                      height={60}  
+                      priority  
+    
+                    />
                 </div>
                 <div className="content">
                   <p>Nous choisissons les solutions techniques les plus adaptées à vos besoins pour garantir performance et évolutivité.</p>
@@ -269,7 +292,15 @@ const Index = () => {
                       <a>Expertise SEO et Référencement</a>
                     </Link>
                   </h5>
-                  <img src="assets/images/services/seo.png" alt="Icon" />
+                  
+                  <Image
+                      src="/assets/images/services/seo.png"
+                      alt="icon"
+                      width={60}  
+                      height={60}  
+                      priority  
+    
+                    />
                 </div>
                 <div className="content">
                   <p>Nous optimisons chaque détail pour maximiser votre présence sur Google et améliorer l’expérience utilisateur.</p>
@@ -290,7 +321,15 @@ const Index = () => {
                       <a>Sécurité & conformité</a>
                     </Link>
                   </h5>
-                  <img src="assets/images/services/verified.png" alt="Icon" />
+                 
+                  <Image
+                      src="/assets/images/services/verified.png"
+                      alt="icon"
+                      width={60}  
+                      height={60}  
+                      priority  
+    
+                    />
                 </div>
                 <div className="content">
                   <p>Nous garantissons des développements respectant les standards de sécurité et la conformité aux réglementations.</p>
@@ -346,8 +385,8 @@ const Index = () => {
               </h4>
             </div>
             <div className="image">
-              <img
-                src="assets/images/projects/novagroupe.webp"
+              <Image
+                src="/assets/images/projects/novagroupe.webp"
                 alt="Project TimeLine Image"
                 width={374}
                 height={245}
@@ -371,8 +410,8 @@ const Index = () => {
               </h4>
             </div>
             <div className="image">
-              <img
-                src="assets/images/projects/nanterre-dom.webp"
+              <Image
+                src="/assets/images/projects/nanterre-dom.webp"
                 alt="Project TimeLine Image"
                 width={374}
                 height={245}
@@ -397,8 +436,8 @@ const Index = () => {
               </h4>
             </div>
             <div className="image">
-              <img
-                src="assets/images/projects/seo2.webp"
+              <Image
+                src="/assets/images/projects/seo2.webp"
                 alt="Project TimeLine Image"
                 width={374}
                 height={245}
@@ -414,216 +453,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Project Timeline Area end */}
-      {/* Team Area start */}
-     {/*  <section className="team-area pt-70 rpt-40">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-9">
-              <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-20">Team Members</span>
-                <h2>Meet Our Professionals Team</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container-fluid">
-          <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/team/member1.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Patrick V. Schroeder</h4>
-                  <span>UI/UX Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-3s">
-                <div className="image">
-                  <img src="assets/images/team/member2.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Michael A. Braun</h4>
-                  <span>UI/UX Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-4s">
-                <div className="image">
-                  <img src="assets/images/team/member3.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>James V. Decastro</h4>
-                  <span>Senior Marketer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-5s">
-                <div className="image">
-                  <img src="assets/images/team/member4.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Troy V. Richardson</h4>
-                  <span>Web Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-6s">
-                <div className="image">
-                  <img src="assets/images/team/member5.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Michael A. Braun</h4>
-                  <span>Apps Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Team Area end */}
-      {/* Headline area start */}
+     
       <div className="headline-area pt-65 rpt-55 rel z-1">
         <div className="container-fluid">
           <div className="headline-text marquee">
@@ -633,8 +463,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-      {/* Headline Area end */}
-      {/* Pricing style three start */}
+ 
       <section className="pricing-area-three pt-85">
         <div className="container container-1290">
           <div className="row justify-content-center">
@@ -647,13 +476,7 @@ const Index = () => {
           </div>
           <div className="row">
             <div className="col-xl-4 col-md-6 wow fadeInUp delay-0-2s">
-              <div
-                className="pricing-banner"
-                style={{
-                  backgroundImage:
-                    "url(assets/images/background/background.webp)",
-                }}
-              >
+            <div className="pricing-banner lazyload" data-bg="assets/images/background/background.webp">
                 <span className="join-us">Rejoignez l'aventure</span>
                 <h4>Des Offres Sur-Mesure Pour Booster Votre Visibilité et Votre Croissance</h4>
                 <Link legacyBehavior href="/pricing">
@@ -662,10 +485,15 @@ const Index = () => {
                   </a>
                 </Link>
                 <div className="hand-shape">
-                  <img
-                    src="assets/images/shapes/pricing-banner-hand-shape.png"
-                    alt="Pricing Banner Shape"
-                  />
+                  
+                   <Image
+                      src="/assets/images/shapes/pricing-banner-hand-shape.png"
+                      alt="Pricing Banner Shape"
+                      width={102}  
+                      height={110}  
+                      priority  
+    
+                    />
                 </div>
               </div>
             </div>
@@ -679,7 +507,15 @@ const Index = () => {
               >
                 <div className="icon-title">
                   <div className="icon">
-                    <img src="assets/images/icons/starter.png" alt="Icon de l'offre starter" />
+                    
+                    <Image
+                      src="/assets/images/shapes/pricing-banner-hand-shape.png"
+                      alt="Icon de l'offre starter"
+                      width={60}  
+                      height={60}  
+                      priority  
+    
+                    />
                   </div>
                   <h5>Pack Starter</h5>
                 </div>
@@ -695,14 +531,7 @@ const Index = () => {
                   <li>Support & Assistance de Démarrage</li>
                 </ul>
                 <br />
-              {/*   <div className="price-offer">
-                  <span className="price-text">
-                    <span className="before">$</span>
-                    <span className="price">18.3</span>
-                  </span>
-                  <img src="assets/images/shapes/right-arrow.png" alt="Arrow" />
-                  <span className="offer-text">Save 15%</span>
-                </div> */}
+             
                 <Link legacyBehavior href="contact">
                   <a className="theme-btn w-100">
                     Demander un devis <i className="far fa-arrow-right" />
@@ -720,7 +549,15 @@ const Index = () => {
               >
                 <div className="icon-title">
                   <div className="icon">
-                    <img src="assets/images/icons/boost.png" alt="Icon de l'offre boost" />
+                     
+                    <Image
+                      src="/assets/images/icons/boost.png"
+                      alt="Icon de l'offre boost"
+                      width={60}  
+                      height={60}  
+                      priority  
+    
+                    />
                   </div>
                   <h5>Pack Boost</h5>
                 </div>
@@ -736,14 +573,7 @@ const Index = () => {
                   <li>Support & Assistance de Démarrage</li>
                 </ul>
                 <br />
-              {/*   <div className="price-offer">
-                  <span className="price-text">
-                    <span className="before">$</span>
-                    <span className="price">18.3</span>
-                  </span>
-                  <img src="assets/images/shapes/right-arrow.png" alt="Arrow" />
-                  <span className="offer-text">Save 15%</span>
-                </div> */}
+             
                 <Link legacyBehavior href="contact">
                   <a className="theme-btn w-100">
                     Demander un devis <i className="far fa-arrow-right" />
@@ -754,17 +584,21 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Pricing style three end */}
-      {/* Why Choose Us Area start */}
+    
       <section className="why-choose-area pt-90 rpt-60 rel z-1">
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-7">
               <div className="why-choose-left-image mb-40 wow fadeInLeft delay-0-2s">
-                <img
-                  src="assets/images/services/digital-works-a-vos-cotes.webp"
-                  alt="Why Choose Left Image"
-                />
+              
+                   <Image
+                      src="/assets/images/services/digital-works-a-vos-cotes.webp"
+                      alt="Pourquoi nous choisir"
+                      width={875}  
+                      height={517}
+                      loading="lazy"   
+    
+                    />
               </div>
             </div>
             <div className="col-xl-5">
@@ -825,8 +659,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Why Choose Us Area end */}
-      {/* Headline area start */}
+    
       <div className="headline-area pt-60 rpt-50 rel z-1">
         <div className="container-fluid">
           <div className="headline-text marquee">
@@ -836,265 +669,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-      {/* Headline Area end */}
-      {/* Testimonial Area start */}
-    {/*   <section className="testimonials-three-area pt-95 rpt-70">
-        <div className="container container-1260">
-          <div className="row gap-120 align-items-center">
-            <div className="col-lg-6">
-              <div className="testimonial-one-right-part rmb-75">
-                <Swiper
-                  {...sliderProps.testimonialsThreeActiveSwiper}
-                  className="testimonials-three-active wow fadeInUp delay-0-2s"
-                >
-                  <SwiperSlide className="testimonial-item style-three">
-                    <div className="ratting style-two">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star-half-alt" />
-                    </div>
-                    <div className="author-speech">
-                      <p>
-                        On the other hand we denounce see with righteous
-                        indignation and dislike men who are so beguiled
-                        demoralized by the charms pleasure moment
-                      </p>
-                    </div>
-                    <div className="middle-quote">
-                      <div className="icon">
-                        <i className="flaticon-right-quote" />
-                      </div>
-                    </div>
-                    <div className="testimonial-footer">
-                      <div className="testimonial-author">
-                        <div className="author-info">
-                          <h4>Richard S. Robertson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="testimonial-item style-three">
-                    <div className="ratting style-two">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star-half-alt" />
-                    </div>
-                    <div className="author-speech">
-                      <p>
-                        On the other hand we denounce see with righteous
-                        indignation and dislike men who are so beguiled
-                        demoralized by the charms pleasure moment
-                      </p>
-                    </div>
-                    <div className="middle-quote">
-                      <div className="icon">
-                        <i className="flaticon-right-quote" />
-                      </div>
-                    </div>
-                    <div className="testimonial-footer">
-                      <div className="testimonial-author">
-                        <div className="author-info">
-                          <h4>Richard S. Robertson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="testimonial-item style-three">
-                    <div className="ratting style-two">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star-half-alt" />
-                    </div>
-                    <div className="author-speech">
-                      <p>
-                        On the other hand we denounce see with righteous
-                        indignation and dislike men who are so beguiled
-                        demoralized by the charms pleasure moment
-                      </p>
-                    </div>
-                    <div className="middle-quote">
-                      <div className="icon">
-                        <i className="flaticon-right-quote" />
-                      </div>
-                    </div>
-                    <div className="testimonial-footer">
-                      <div className="testimonial-author">
-                        <div className="author-info">
-                          <h4>Richard S. Robertson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="testimonial-item style-three">
-                    <div className="ratting style-two">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star-half-alt" />
-                    </div>
-                    <div className="author-speech">
-                      <p>
-                        On the other hand we denounce see with righteous
-                        indignation and dislike men who are so beguiled
-                        demoralized by the charms pleasure moment
-                      </p>
-                    </div>
-                    <div className="middle-quote">
-                      <div className="icon">
-                        <i className="flaticon-right-quote" />
-                      </div>
-                    </div>
-                    <div className="testimonial-footer">
-                      <div className="testimonial-author">
-                        <div className="author-info">
-                          <h4>Richard S. Robertson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-                <div className="testimonial-controls style-three mt-65 rmt-40 wow fadeInUp delay-0-3s animated">
-                  <button className="testimonial-three-prev slick-arrow slick-disabled">
-                    <i className="far fa-long-arrow-left" />
-                  </button>
-                  <div className="testimonial-three-dots">
-                    <div className="slick-dots"></div>
-                  </div>
-                  <button className="testimonial-three-next slick-arrow">
-                    <i className="far fa-long-arrow-right" />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="testimonials-three-image wow fadeInRight delay-0-2s">
-                <img
-                  src="assets/images/testimonials/testimonials-three.jpg"
-                  alt="Testimonials"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
-      {/* Testimonial Area end */}
-      {/* Blog Style Two start */}
-    {/*   <section className="blog-area-two pt-125 rpt-100 pb-70 rpb-40">
-        <div className="container container-1290">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-10">
-              <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-20">Blog &amp; News</span>
-                <h2>Read Our Latest News &amp; Blog Get Every Updates</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-xl-4 col-md-6">
-              <div className="blog-item wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/blog/blog1.jpg" alt="Blog" />
-                </div>
-                <ul className="blog-meta">
-                  <li>
-                    <i className="far fa-calendar-alt" />
-                    <a href="#">February 18, 2023</a>
-                  </li>
-                  <li>
-                    <i className="far fa-comments" />
-                    <a href="#">Comment (5)</a>
-                  </li>
-                </ul>
-                <hr />
-                <h4>
-                  <Link legacyBehavior href="/blog-details">
-                    <a>Voice Skills For Google Assistant And Amazon Alexa</a>
-                  </Link>
-                </h4>
-                <Link legacyBehavior href="/blog-details">
-                  <a className="read-more">
-                    Read More <i className="far fa-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="blog-item wow fadeInUp delay-0-4s">
-                <div className="image">
-                  <img src="assets/images/blog/blog2.jpg" alt="Blog" />
-                </div>
-                <ul className="blog-meta">
-                  <li>
-                    <i className="far fa-calendar-alt" />
-                    <a href="#">February 18, 2023</a>
-                  </li>
-                  <li>
-                    <i className="far fa-comments" />
-                    <a href="#">Comment (5)</a>
-                  </li>
-                </ul>
-                <hr />
-                <h4>
-                  <Link legacyBehavior href="/blog-details">
-                    <a>
-                      Inclusive Design And Accessibility Stream Heydon Pickering
-                    </a>
-                  </Link>
-                </h4>
-                <Link legacyBehavior href="/blog-details">
-                  <a className="read-more">
-                    Read More <i className="far fa-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="blog-item wow fadeInUp delay-0-6s">
-                <div className="image">
-                  <img src="assets/images/blog/blog3.jpg" alt="Blog" />
-                </div>
-                <ul className="blog-meta">
-                  <li>
-                    <i className="far fa-calendar-alt" />
-                    <a href="#">February 18, 2023</a>
-                  </li>
-                  <li>
-                    <i className="far fa-comments" />
-                    <a href="#">Comment (5)</a>
-                  </li>
-                </ul>
-                <hr />
-                <h4>
-                  <Link legacyBehavior href="/blog-details">
-                    <a>
-                      Creating Online Environments The Work Well For Older Users
-                    </a>
-                  </Link>
-                </h4>
-                <Link legacyBehavior href="/blog-details">
-                  <a className="read-more">
-                    Read More <i className="far fa-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Blog Style Two end */}
-      {/* footer area start */}
     </Layout>
   );
 };

@@ -92,21 +92,7 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-                {/* <h4>Nos réseaux sociaux</h4>
-                <div className="social-style-two pt-15">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div> */}
+              
               </div>
             </div>
             <div className="col-xl-5 col-lg-6">
@@ -218,23 +204,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      {/* Contact Form Area end */}
-      {/* Location Map Area Start */}
-  {/*     <div className="contact-page-map mb-120 rpb-90 wow fadeInUp delay-0-2s">
-        <div className="container-fluid">
-          <div className="our-location">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d142190.2862584524!2d-74.01298319978558!3d40.721725351435126!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1663473911885!5m2!1sen!2sbd"
-              style={{ border: 0, width: "100%" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-        </div>
-      </div> */}
-      {/* Location Map Area End */}
-      {/* footer area start */}
+   
     </Layout>
   );
 };
