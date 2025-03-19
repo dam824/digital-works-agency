@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import niceSelect from "react-nice-select";
+import Script from "next/script"; 
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -16,6 +17,13 @@ export default function App({ Component, pageProps }) {
     setTimeout(() => {
       setLoaded(true);
     }, 1500);
+  }, []);
+
+  useEffect(() => {
+    const noscriptTag = document.createElement("noscript");
+    noscriptTag.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8PCZB8K" 
+                             height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
+    document.body.prepend(noscriptTag);
   }, []);
 
   return (
@@ -35,6 +43,20 @@ export default function App({ Component, pageProps }) {
           rel="shortcut icon"
           href="assets/images/favicon.svg"
           type="image/x-icon"
+        />
+            {/* Google Tag Manager */}
+            <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id=GTM-N8PCZB8K'+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-N8PCZB8K');
+            `,
+          }}
         />
         {/* Google Fonts */}
         <link
@@ -79,6 +101,7 @@ export default function App({ Component, pageProps }) {
         />
         
       </Head>
+      
       {!loaded && <PreLoader />}
       {loaded && <Component {...pageProps} />}
       
