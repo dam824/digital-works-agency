@@ -3,7 +3,8 @@ import "@/styles/globals.css";
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import niceSelect from "react-nice-select";
-import Script from "next/script"; 
+
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -18,6 +19,28 @@ export default function App({ Component, pageProps }) {
       setLoaded(true);
     }, 1500);
   }, []);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    // Vérifie si GTM est déjà initialisé pour éviter les doublons
+    if (!window.dataLayer) {
+      window.dataLayer = [];
+      window.dataLayer.push({ event: "gtm.js", "gtm.start": new Date().getTime() });
+    }
+
+    const handleRouteChange = (url) => {
+      window.dataLayer.push({
+        event: "pageview",
+        page: url,
+      });
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   useEffect(() => {
     const noscriptTag = document.createElement("noscript");
@@ -36,16 +59,16 @@ export default function App({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {/* Title */}
+   
         <title>DigitalWorks - Agence Web & SEO | Création de site internet</title>
-        {/* Favicon Icon */}
+     
         <link
           rel="shortcut icon"
           href="assets/images/favicon.svg"
           type="image/x-icon"
         />
-            {/* Google Tag Manager */}
-            <Script
+            
+            <script
           id="google-tag-manager"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -58,29 +81,20 @@ export default function App({ Component, pageProps }) {
             `,
           }}
         />
-        {/* Google Fonts */}
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        {/* Flaticon */}
         <link rel="stylesheet" href="assets/css/flaticon.min.css" />
-        {/* Font Awesome */}
         <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css" />
-        {/* Bootstrap */}
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        {/* Magnific Popup */}
         <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
-        {/* Nice Select */}
         <link rel="stylesheet" href="assets/css/nice-select.min.css" />
-        {/* Animate */}
         <link rel="stylesheet" href="assets/css/animate.min.css" />
-        {/* Slick */}
         <link rel="stylesheet" href="assets/css/slick.min.css" />
-        {/* Main Style */}
         <link rel="stylesheet" href="assets/css/style.css" />
 
-              {/* JSON-LD pour le SEO */}
+              
               <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
