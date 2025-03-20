@@ -36,7 +36,14 @@ const DefaultHeader = ({ singleMenu, dark }) => {
             <div className="menu-btns">
               {/* menu sidbar */}
               <div className="menu-sidebar">
-                <button>
+              <button onClick={() => {
+                      const link = document.createElement("a");
+                      link.href = "/contact.vcf"; // Le fichier doit être dans /public/
+                      link.download = "contact.vcf";
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}>
                   <img src="assets/images/icons/toggler.svg" alt="Toggler" />
                 </button>
               </div>
